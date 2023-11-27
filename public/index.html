@@ -333,48 +333,52 @@
                                             </div>
                                         </div>
                                     </form>
-
                                     <script>
                                         const searchInput = document.getElementById('inlineFormInputGroup');
                                         const searchItems = document.getElementById('search_items');
-                                        const searchOptions = [
-                                            'ropa para niña',
-                                            'carrito de bebé',
-                                            'blusas casuales para mujer',
-                                            'esfera del dragón',
-                                            'zapato para mujer',
-                                            'reloj para hombres',
-                                            'accesorios para baños',
-                                            'consola de juego',
-                                            'fajas de mujer',
-                                            'vestidos de fiesta para mujer'
-                                        ];
-
+                                      
                                         searchInput.addEventListener('input', function () {
-                                            const searchTerm = searchInput.value.toLowerCase();
-                                            const filteredOptions = searchOptions.filter(option => option.toLowerCase().includes(searchTerm));
-
+                                          const searchTerm = searchInput.value.toLowerCase();
+                                      
+                                          // Enviar la búsqueda al servidor
+                                          fetch('/api/search', {
+                                            method: 'POST',
+                                            headers: {
+                                              'Content-Type': 'application/json',
+                                            },
+                                            body: JSON.stringify({ name: searchTerm }),
+                                          })
+                                          .then(response => response.json())
+                                          .then(results => {
                                             // Limpiar la lista de opciones de búsqueda
                                             searchItems.innerHTML = '';
-
-                                            // Mostrar las opciones de búsqueda coincidentes
-                                            filteredOptions.forEach(option => {
+                                      
+                                            // Mostrar las opciones de búsqueda coincidentes desde los resultados del servidor
+                                            if (Array.isArray(results)) {
+                                              results.forEach(result => {
                                                 const listItem = document.createElement('li');
                                                 listItem.className = 'search_item';
-                                                listItem.textContent = option;
+                                                listItem.textContent = result.title; // Ajusta esto según la estructura de tus resultados
                                                 searchItems.appendChild(listItem);
-
-                                                // Agregar lógica para manejar el clic en cada opción (por ejemplo, realizar la búsqueda correspondiente)
+                                      
+                                                // Agregar lógica para manejar el clic en cada opción
                                                 listItem.addEventListener('click', function () {
-                                                    searchInput.value = option; // Puedes establecer el valor del campo de búsqueda con la opción seleccionada
-                                                    // Aquí puedes agregar más lógica para manejar la selección de la opción
+                                                  searchInput.value = result.title; // Puedes establecer el valor del campo de búsqueda con la opción seleccionada
+                                                  // Aquí puedes agregar más lógica para manejar la selección de la opción
                                                 });
-                                            });
-
+                                              });
+                                            }
+                                      
                                             // Mostrar la lista de opciones de búsqueda
-                                            searchItems.style.display = filteredOptions.length > 0 ? 'block' : 'none';
+                                            searchItems.style.display = results && results.length > 0 ? 'block' : 'none';
+                                          })
+                                          .catch(error => {
+                                            console.error('Error en la búsqueda:', error);
+                                            // Manejar el error de alguna manera (mostrar un mensaje al usuario, etc.)
+                                          });
                                         });
-                                    </script>
+                                      </script>
+                                      
 
 
                                 </div>
