@@ -121,3 +121,38 @@ $(document).ready(function(){
       $(".email").html(data.email)
     })
   })
+
+  // Cuando el documento esté listo
+$(document).ready(function () {
+  // Llama a la función para obtener y mostrar categorías
+  getAndDisplayCategories();
+});
+
+// Función para obtener y mostrar categorías
+function getAndDisplayCategories() {
+  // Ruta de la API para obtener categorías
+  const apiUrl = '/api/categories';
+
+  // Realiza la solicitud AJAX para obtener categorías
+  $.get(apiUrl, function (categories) {
+      // Selecciona el contenedor
+      const container = $('#filter_category_1 .containerm');
+
+      // Recorre las categorías y las agrega al contenedor
+      categories.forEach(function (category) {
+          // Crea un nuevo elemento de categoría
+          const categoryElement = `
+              <div class="card">
+                  <img src="${category.image}" alt="${category.name}">
+                  <div class="category-name">${category.name}</div>
+              </div>
+          `;
+          
+          // Agrega el elemento al contenedor
+          container.append(categoryElement);
+      });
+  })
+  .fail(function (error) {
+      console.error('Error al obtener categorías:', error.responseText);
+  });
+}
