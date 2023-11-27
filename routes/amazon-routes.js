@@ -77,6 +77,11 @@ module.exports = function (app) {
     }).then(function (req2) {
       console.log(req2.dataValues.id);
       res.json(req2.dataValues.id);
+    })
+    .catch(function (err) {
+      console.log("Error:", err);
+      // En lugar de solo imprimir el error, también puedes enviar una respuesta de error al cliente
+      res.status(500).json({ error: "Error al crear Lista" });
     });
   });
 
