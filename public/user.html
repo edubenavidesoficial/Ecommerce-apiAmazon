@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/user.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <title>Pulenta</title>
+</head>
+
+
+<body>
+    <!-- Top Nav Bar -->
+    <main>
+        <nav class="cyan darken-1" role="navigation">
+            <button data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </button>
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="index.html" class="brand-logo"><span class="font">Pulenta</span></a>
+                
+                <ul class="right">
+                    <li>
+                        <a id="logOutBtn" href="/">Cerrar Sesion</a>
+                    </li>
+                    <!-- <li><a class="modal-trigger" href="#signup-modal">Sign Up</a></li> -->
+                </ul>
+            </div>
+        </nav>
+        
+        <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view">
+                    <div class="background"></div>
+                    <a href="#user"></a>
+                    <a href="#name"><span class="black-text name">Pulenta</span></a>
+                    <a href="#email"><span class="black-text email">admin@gmail.com</span></a>
+                </div>
+            </li>
+            <li>
+                <a href="/"><i class="material-icons">cloud</i>Home</a>
+            </li>
+            <li>
+                <a href="#!">Perfil</a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li>
+                <a class="subheader">Ver</a>
+            </li>
+            <li>
+                <a id="mylist" class="waves-effect" href="#!">Mis Busquedas</a>
+            </li>
+            <li>
+                <a id="mycart" class="waves-effect" href="#!">Mis Compras</a>
+            </li>
+        </ul>
+            
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <h6 id="instruct">Comience ingresando el título y un breve párrafo que describa su lista.</h6>
+                    <form>
+                        <div class="title input-field col s12">
+                            <input id="title" type="text" class="validate">
+                            <label for="title">Title</label>
+                        </div>
+                        <div class="description input-field col s12">
+                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">List Description</label>
+                        </div>
+                        
+                        <div class="addItem row"></div>
+                        
+                        <div id="product-search">
+                            <button class="btn cyan" id="create">Crear</button>
+                        </div>
+                        <br><br><br>
+                        <div id="finish-btn">
+                        </div>
+                        <!-- Modal Trigger -->
+                        <!-- <button data-target="modal1" class="btn modal-trigger">Create List</button> -->
+                        <!-- Modal Structure -->
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">                                
+                                <table class="highlight">
+                                    <!-- <div class="results"></div> -->
+                                    <tbody class="results"></tbody>
+                                </table>
+                            </div>
+                        </div>   
+                        <div class="results"></div>             
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Login Modal -->
+        <div id="login-modal" class="modal">
+            <div class="modal-content">
+                <h4>Login</h4>
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="login-email" type="email" class="validate">
+                            <label for="login-email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="login-password" type="password" class="validate">
+                            <label for="login-password">Password</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" id="login-btn" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+            </div>
+        </div>
+
+        <!-- Sign Up Modal -->
+        <div id="signup-modal" class="modal">
+            <div class="modal-content">
+                <h4>Sign Up</h4>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="password" type="password" class="validate">
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+            <div class="modal-footer">
+                <a href="#!" id="signup-btn" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+            </div>
+        </div>
+    </main>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    
+    <script src="js/search.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        
+        // modal create list
+        var elem = document.querySelector('.modal1');
+        var instance = M.Modal.init(elem);
+        // Or with jQuery 
+        $(document).ready(function () {
+            $('#modal1').modal();
+        });
+
+        $('#logOutBtn').on("click", function(){
+            window.localStorage.clear();
+        });
+    </script>
+
+</body>
+
+</html>
