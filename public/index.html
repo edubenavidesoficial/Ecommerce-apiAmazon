@@ -63,15 +63,13 @@
 
 <body>
     <div class="promotion_bar position-relative top-0 start-0 w-100 d-lg-block">
-        <a href="" target="_blank" class="promotion_bar_wrapper d-flex align-items-center position-relative">
+        <a class="promotion_bar_wrapper d-flex align-items-center position-relative">
             <span class="close_promobar gj-cursor-pointer d-inline-flex align-items-center justify-content-center"
                 id="promotion_close">
                 <i class="ti-close"></i>
             </span>
         </a>
     </div>
-    <!-- HEADER::START -->
-    <input type="hidden" id="url" value="https://pulentaa.com">
     <!-- HEADER::START -->
     <header class="amazcartui_header">
         <div id="sticky-header" class="header_area">
@@ -610,10 +608,10 @@
     <div id="filter_category_1" class="amaz_section section_spacing2">
         <div class="containerm" id="category-container">
             <!-- Categorías se agregarán aquí dinámicamente -->
-         
+
         </div>
     </div>
-    
+
     <!-- Agrega esta sección donde quieras mostrar las categorías -->
 
     <div id="filter_category_2" class="amaz_section section_spacing2 ">
@@ -820,8 +818,9 @@
                                 <br>
                             </ul>
                         </div>
-                        <img src="https://cdn.schedaup.com/wp-content/uploads/Culqi-medios-de-pago-e1670392743705.png" width="600px">
-                        
+                        <img src="https://cdn.schedaup.com/wp-content/uploads/Culqi-medios-de-pago-e1670392743705.png"
+                            width="600px">
+
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 footer_links_50 ">
                         <div class="footer_widget">
@@ -839,8 +838,8 @@
                             </div>
                         </div>
                     </div>
-                   
-                   
+
+
                     <div class="col-lg-3  col-md-6">
                         <div class="footer_widget">
                             <div class="footer_title">
@@ -862,14 +861,16 @@
                                     <form class="col s12">
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <input id="login-email" type="email" class="form-control validate" placeholder="Email">
-                                                
+                                                <input id="login-email" type="email" class="form-control validate"
+                                                    placeholder="Email">
+
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <input id="login-password" type="password" class="form-control validate" placeholder="Contraseña">
-                                                
+                                                <input id="login-password" type="password" class="form-control validate"
+                                                    placeholder="Contraseña">
+
                                             </div>
                                         </div>
                                     </form>
@@ -988,9 +989,24 @@
     <script src="frontend/amazy/compile_js/app.js"></script>
 
     <script src="js/custom.js"></script>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            // Obtener el elemento de cierre del banner
+            var closePromoBar = document.getElementById('promotion_close');
 
+            // Agregar un evento de clic al elemento de cierre
+            if (closePromoBar) {
+                closePromoBar.addEventListener('click', function () {
+                    // Ocultar el banner al hacer clic en el botón de cierre
+                    var promotionBar = document.querySelector('.promotion_bar');
+                    if (promotionBar) {
+                        promotionBar.style.visibility = 'hidden';
+                    }
+                });
+            }
+        });
 
+    </script>
 </body>
 
 </html>
