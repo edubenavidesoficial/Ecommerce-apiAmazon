@@ -25,7 +25,8 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="uploads/settings/652822b2e975c.png">
     <link rel="icon" href="uploads/settings/652822b2e975c.png" type="image/png">
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- CSS here -->
     <link rel="stylesheet" href="frontend/amazy/compile_css/app.css">
     <link rel="stylesheet" href="css/pulenta.css">
@@ -613,8 +614,8 @@
                 <img src="uploads/images/21-10-2023/a.jpg" alt="Categoría ">
                 <div class="category-name">Categoría </div>
             </div>
-    
-    
+
+
             <div class="card">
                 <img src="uploads/images/21-10-2023/a.jpg" alt="Categoría ">
                 <div class="category-name">Categoría </div>
@@ -627,7 +628,7 @@
                 <img src="uploads/images/21-10-2023/a.jpg" alt="Categoría ">
                 <div class="category-name">Categoría </div>
             </div>
-    
+
             <div class="card">
                 <img src="uploads/images/21-10-2023/a.jpg" alt="Categoría ">
                 <div class="category-name">Categoría </div>
@@ -640,7 +641,7 @@
                 <img src="uploads/images/21-10-2023/a.jpg" alt="Categoría ">
                 <div class="category-name">Categoría </div>
             </div>
-    
+
             <div class="card">
                 <img src="uploads/images/21-10-2023/a.jpg" alt="Categoría ">
                 <div class="category-name">Categoría </div>
@@ -849,8 +850,11 @@
                             <ul class="footer_links">
                                 <li><a href="empresa">Tienda</a></li>
                                 <li><a href="blog">Blog</a></li>
+                                <br>
                             </ul>
                         </div>
+                        <img src="https://cdn.schedaup.com/wp-content/uploads/Culqi-medios-de-pago-e1670392743705.png" width="600px">
+                        
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 footer_links_50 ">
                         <div class="footer_widget">
@@ -868,6 +872,8 @@
                             </div>
                         </div>
                     </div>
+                   
+                   
                     <div class="col-lg-3  col-md-6">
                         <div class="footer_widget">
                             <div class="footer_title">
@@ -884,25 +890,27 @@
                                 </form>
                             </div>
                             <div class="social__Links">
-                                <div class="modal-content">
+                                <div class="subcribe-form mb_20 theme_mailChimp2 modal-content">
                                     <h4>Login</h4>
                                     <form class="col s12">
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <input id="login-email" type="email" class="validate">
-                                                <label for="login-email">Email</label>
+                                                <input id="login-email" type="email" class="form-control validate" placeholder="Email">
+                                                
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <input id="login-password" type="password" class="validate">
-                                                <label for="login-password">Password</label>
+                                                <input id="login-password" type="password" class="form-control validate" placeholder="Contraseña">
+                                                
                                             </div>
                                         </div>
                                     </form>
+                                    <br>
                                 </div>
                                 <div class="modal-footer">
-                                    <a href="#!" id="login-btn" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+                                    <a href="#!" id="login-btn"
+                                        class="modal-action modal-close waves-effect waves-green btn-flat">Login</a>
                                 </div>
                             </div>
                         </div>
@@ -995,10 +1003,16 @@
             <img class="responsive-img" src="images/screenshot.png">
         </div>
     </div>
+    <!-- Botón flotante de WhatsApp -->
+    <div class="fixed-action-btn">
+        <a href="https://wa.me/51922365059" class="btn-floating btn-large">
+            <img src="images/icons/wa.png" width="50px" alt="WhatsApp">
+        </a>
+    </div>
+
     <div id="back-top" style="display: none;">
         <a title="Go to Top" href="#"><i class="ti-angle-up"></i></a>
     </div>
-
     <!-- Scripts Section -->
     <script src="jquery/jquery.min.js"></script>
     <script src="js/index.js"></script>

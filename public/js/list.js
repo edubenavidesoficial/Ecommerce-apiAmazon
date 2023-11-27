@@ -51,7 +51,7 @@ var token = window.localStorage.getItem("token")
     $.get("/api/userpage/" + token, function (bata) {
         //console.log(JSON.stringify(bata))
 
-        $(".list-name").html(bata.first_name + "'s List");
+        $(".list-name").html(bata.first_name + "Cuenta");
      })
 
 })
