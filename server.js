@@ -6,6 +6,7 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
+const cors = require("cors"); // Importa CORS
 
 // Sets up the Express App
 // =============================================================
@@ -24,7 +25,7 @@ app.use(bodyParser.json());
 
 // Static directory
 app.use(express.static("public"));
-
+app.use(cors()); // Usa CORS en tu aplicación Express
 // Login 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");

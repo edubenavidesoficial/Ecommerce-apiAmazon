@@ -2,9 +2,9 @@ amazon = require("amazon-affiliate-api");
 var db = require("../models");
 
 var search = amazon.createClient({
-  awsId: "AKIAI6WBUE3QV3KGDEAA",
-  awsSecret: "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",
-  awsTag: "mobilead0046f-20",
+  awsId: "AKIAYH4P6TPMZHXTIX3V",  // Reemplaza con tu Access Key ID
+  awsSecret: "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",  // Reemplaza con tu Secret Access Key
+  awsTag: "a77015054-20", //ID De Seguimiento
 });
 
 module.exports = function (app) {
