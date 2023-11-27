@@ -12,7 +12,7 @@ var db = require("../models");
 // =============================================================
 module.exports = function(app) {
 
-  // GET route for getting all of the posts
+  // Obtenga ruta para obtener todas las publicaciones
   app.get("/api/posts/", function(req, res) {
     db.List.findAll({})
       .then(function(dbPost) {
