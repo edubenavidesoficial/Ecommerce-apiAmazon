@@ -38,6 +38,7 @@ app.use(function(req, res, next) {
 require("./routes/html-routes")(app);
 require("./routes/login-routes.js")(app);
 require("./routes/amazon-routes.js")(app);
+require("./routes/admin-routes.js")(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================

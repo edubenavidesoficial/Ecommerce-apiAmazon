@@ -32,6 +32,8 @@ module.exports = function(app) {
       });
   });
 
+
+
   // Get route for retrieving a single post
   app.get("/api/posts/:id", function(req, res) {
     db.Post.findOne({

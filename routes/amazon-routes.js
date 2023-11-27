@@ -60,11 +60,12 @@ module.exports = function (app) {
         res.json(results);
       })
       .catch(function (err) {
-        console.log("Error:", err.message);
+        console.log("Error:", err);
         // En lugar de solo imprimir el error, también puedes enviar una respuesta de error al cliente
-       // res.status(500).json({ error: "Error en la búsqueda" });
+        res.status(500).json({ error: "Error en la búsqueda" });
       });
   });
+
 
   app.post("/api/list/:id/", function (req, res) {
     console.log("list/id", req.params.id);
