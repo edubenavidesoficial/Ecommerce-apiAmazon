@@ -8,6 +8,34 @@ var search = amazon.createClient({
 });
 
 module.exports = function (app) {
+// Ruta en Express para manejar esta lógica
+app.get('/productos-amazon', async (req, res) => {
+    try {
+        // Realiza una búsqueda en Amazon API
+        const results = await search.itemSearch({
+            search: 'your_search_query',
+            responseGroup: 'ItemAttributes,Offers,Images', // Puedes ajustar esto según tus necesidades
+            // Otros parámetros de búsqueda aquí
+        });
+
+        // Procesa los resultados y muestra una lista de productos
+        const products = results.map(item => {
+            return {
+                title: item.ItemAttributes.Title,
+                price: item.Offers.Offer.OfferListing.Price.FormattedPrice,
+                image: item.LargeImage.URL,
+                // Otros detalles del producto que quieras mostrar
+            };
+        });
+
+        // Puedes enviar los productos a tu vista o hacer lo que desees con ellos
+        res.render('productos', { products });
+    } catch (error) {
+        console.error('Error al buscar productos en Amazon:', error);
+        res.status(500).send('Error interno del servidor');
+    }
+})
+
     app.post("/api/search", function (req, res) {
 
         console.log(req.body.name);
