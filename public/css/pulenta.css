@@ -237,3 +237,21 @@
     color: #e44d26;
     font-weight: bold;
 }
+
+/* Estilos para el botón flotante de WhatsApp */
+.fixed-action-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  /* Estilos para el icono del botón flotante */
+  .fixed-action-btn i {
+    font-size: 24px;
+  }
+  /* Media query para ocultar el botón en versiones móviles */
+  @media (max-width: 767px) {
+    .fixed-action-btn {
+      display: none;
+    }
+  }
