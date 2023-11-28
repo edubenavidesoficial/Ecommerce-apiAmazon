@@ -17,7 +17,7 @@ Paso 5: Reciba el pago cuando alguien compre un artículo fuera de su lista.
 A continuación, tenemos una vista previa de 'la lista' en acción:
 
 
-<img width="1440" alt="screen shot 2018-04-04 at 9 47 32 pm" src="https://user-images.githubusercontent.com/34965292/38347892-1c7740b6-3853-11e8-9dce-9f6556fa8882.png">
+<img width="1440" alt="screen shot 2023-04-04 at 9 47 32 pm" src="https://ingealimite.com/demos/aa1.png">
 
 <img width="1440" alt="screen shot 2018-04-04 at 9 52 25 pm" src="https://user-images.githubusercontent.com/34965292/38347897-25a5b046-3853-11e8-8f19-9e658ca49cd3.png">
 

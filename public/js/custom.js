@@ -1,7 +1,8 @@
 var productos = [
     { name: 'Producto1', precio: 25, imagen: 'https://picsum.photos/500/500' },
     { name: 'Producto2', precio: 15, imagen: 'https://picsum.photos/500/500' },
-    { name: 'Producto3', precio: 30, imagen: 'https://picsum.photos/500/500' }
+    { name: 'Producto3', precio: 30, imagen: 'https://picsum.photos/500/500' },
+    { name: 'Producto4', precio: 30, imagen: 'https://picsum.photos/500/500' }
 ];
 // Función para agregar productos al contenedor
 function agregarProductos(data) {
