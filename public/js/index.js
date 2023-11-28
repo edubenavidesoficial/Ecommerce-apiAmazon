@@ -143,7 +143,7 @@ function getAndDisplayCategories() {
           // Crea un nuevo elemento de categoría
           const categoryElement = `
               <div class="card">
-                  <img src="${category.image}" alt="${category.name}">
+                  <img src="images/categories/${category.image}" alt="${category.name}">
                   <div class="category-name">${category.name}</div>
               </div>
           `;
