@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Add to homescreen for Chrome on Android -->
+     <meta name="mobile-web-app-capable" content="yes">
+     <meta name="application-name" content="Pulentaa">
+     <link rel="icon" sizes="512x512" href="images/icons/icon-512x512.png">
+ 
+     <!-- Add to homescreen for Safari on iOS -->
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-status-bar-style" content="black">
+     <meta name="apple-mobile-web-app-title" content="Pulentaa">
+     <link rel="apple-touch-icon" href="images/icons/icon-512x512.png">
+ 
+     <!-- Tile for Win8 -->
+     <meta name="msapplication-TileColor" content="#ffffff">
+     <meta name="msapplication-TileImage" content="images/icons/icon-512x512.png">
+ 
+     <link rel="shortcut icon" type="image/x-icon" href="uploads/settings/652822b2e975c.png">
+     <link rel="icon" href="uploads/settings/652822b2e975c.png" type="image/png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/user.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <title>Pulenta</title>
+</head>
+
+
+<body>
+    <!-- Top Nav Bar -->
+    <main>
+        <nav class="cyan darken-1" style="background-color: #FF9800 !important;" role="navigation">
+            <button data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </button>
+            <div class="nav-wrapper container">
+                <a href="/user">
+                    <img src="uploads/settings/65284ca307ab2.png" alt="Pulentaa"
+                        title="Pulentaa">
+                </a>
+                
+                <ul class="right">
+                    <li>
+                        <a id="logOutBtn" href="/">Cerrar Sesion</a>
+                    </li>
+                    <!-- <li><a class="modal-trigger" href="#signup-modal">Sign Up</a></li> -->
+                </ul>
+            </div>
+        </nav>
+        
+        <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view">
+                    <div class="background"></div>
+                    <a href="#user"></a>
+                    <a href="#name"><span class="black-text name">Pulenta</span></a>
+                    <a href="#email"><span class="black-text email">admin@gmail.com</span></a>
+                </div>
+            </li>
+            <li>
+                <a href="/"><i class="material-icons">cloud</i>Home</a>
+            </li>
+            <li>
+                <a href="#!">Perfil</a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li>
+                <a class="subheader">Ver</a>
+            </li>
+            <li>
+                <a id="mylist" class="waves-effect" href="#!">Mis Busquedas</a>
+            </li>
+            <li>
+                <a id="mycart" class="waves-effect" href="#!">Mis Compras</a>
+            </li>
+        </ul>
+            
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <div class="col l12">
+                        <h4 id="list-name"></h4>
+                        <p id="list-description"></p>
+                    </div>
+                </div>
+                <div class="row card text-white bg-success">
+                    <div style="text-align: center; padding-top:4%;">
+                        <img class="card-img-top" src="https://picsum.photos/500/500" alt="" id="imagen">
+                    </div>
+                  <div class="card-body">
+                    <h4 class="card-title" id="nombre">Titulo</h4>
+                    <p class="card-text" id="precio">$precio</p>
+                  </div>
+                </div>
+    
+                </div>
+                <div class="row summary">
+                    <h6>Resumen</h6>
+                    <p style="text-aling:justify;" id="descripcion">Descripcion</p>
+    
+                </div>
+            </div>
+        </div>
+    
+      
+      
+    </main>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../js/detalle-producto.js"></script>
+  
+
+</body>
+
+</html>
