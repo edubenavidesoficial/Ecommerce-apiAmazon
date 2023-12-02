@@ -4,32 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Add to homescreen for Chrome on Android -->
-     <meta name="mobile-web-app-capable" content="yes">
-     <meta name="application-name" content="Pulentaa">
-     <link rel="icon" sizes="512x512" href="../images/icons/icon-512x512.png">
- 
-     <!-- Add to homescreen for Safari on iOS -->
-     <meta name="apple-mobile-web-app-capable" content="yes">
-     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-     <meta name="apple-mobile-web-app-title" content="Pulentaa">
-     <link rel="apple-touch-icon" href="../images/icons/icon-512x512.png">
- 
-     <!-- Tile for Win8 -->
-     <meta name="msapplication-TileColor" content="#ffffff">
-     <meta name="msapplication-TileImage" content="../images/icons/icon-512x512.png">
- 
-     <link rel="shortcut icon" type="image/x-icon" href="../uploads/settings/652822b2e975c.png">
-     <link rel="icon" href="../uploads/settings/652822b2e975c.png" type="image/png">
-    
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Pulentaa">
+    <link rel="icon" sizes="512x512" href="../images/icons/icon-512x512.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Pulentaa">
+    <link rel="apple-touch-icon" href="../images/icons/icon-512x512.png">
+
+    <!-- Tile for Win8 -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/icons/icon-512x512.png">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../uploads/settings/652822b2e975c.png">
+    <link rel="icon" href="../uploads/settings/652822b2e975c.png" type="image/png">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
     <link rel="stylesheet" href="../css/user.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  
-    
+
+
     <title>Pulenta</title>
 </head>
 
@@ -43,10 +43,9 @@
             </button>
             <div class="nav-wrapper container">
                 <a href="/user">
-                    <img src="../uploads/settings/65284ca307ab2.png" alt="Pulentaa"
-                        title="Pulentaa">
+                    <img src="../uploads/settings/65284ca307ab2.png" alt="Pulentaa" title="Pulentaa">
                 </a>
-                
+
                 <ul class="right">
                     <li>
                         <a id="logOutBtn" href="/">Cerrar Sesion</a>
@@ -55,7 +54,7 @@
                 </ul>
             </div>
         </nav>
-        
+
         <ul id="slide-out" class="sidenav">
             <li>
                 <div class="user-view">
@@ -89,57 +88,1624 @@
             <div class="row">
                 <!-- Left Column (col-6) -->
                 <div class="col-4">
-                   <!-- Content for the right column (col-6) -->
-                   <div class="row card text-white bg-success">
-                    <div style="text-align: center; padding-top: 4%;">
-                        <img class="card-img-top" src="https://picsum.photos/500/500" alt="" id="imagen">
-                    </div>
-                    
-                </div> <!-- Content for the left column (col-6) -->
+                    <!-- Content for the right column (col-6) -->
+                    <div class="row card text-white bg-success">
+                        <div style="text-align: center; padding-top: 4%;">
+                            <img class="card-img-top" src="https://picsum.photos/500/500" alt="" id="imagen">
+                        </div>
+
+                    </div> <!-- Content for the left column (col-6) -->
                 </div>
-                
+
                 <!-- Right Column (col-6) -->
                 <div class="col-4">
                     <h4 id="list-name"></h4>
-                        <p id="list-description"></p>
-                        <div class="card-body">
-                            <h4 class="card-title" id="nombre">Titulo</h4>
-                            <p class="card-text" id="precio">$precio</p>
-    
-                            <!-- Additional Details -->
-                            <div class="details">
-                                <p id="marca">Marca: XYZ</p>
-                                <p id="modelo">Modelo: ABC</p>
-                                <!-- Add more details as needed -->
+                    <p id="list-description"></p>
+                    <div class="card-body">
+                        <h4 class="card-title" id="nombre">Titulo</h4>
+                        <p class="card-text" id="precio">$precio</p>
+
+                        <!-- Additional Details -->
+                        <div class="details">
+                            <p id="marca">Marca: XYZ</p>
+                            <p id="modelo">Modelo: ABC</p>
+                            <!-- Add more details as needed -->
+                        </div>
+
+                        <!-- Quantity and Add to Cart -->
+                        <div class="quantity-section">
+                            <label for="quantity">Cantidad:</label>
+                            <select id="quantity" name="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <!-- Add more options as needed -->
+                            </select>
+
+                            <button id="addToCart" class="btn btn-primary">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="a-box-inner">
+                        <div class="a-section a-spacing-none a-padding-none">
+                           
+                            <div id="desktop_qualifiedBuyBox" class="celwidget"
+                                data-feature-name="desktop_qualifiedBuyBox" data-csa-c-type="widget"
+                                data-csa-c-content-id="desktop_qualifiedBuyBox"
+                                data-csa-c-slot-id="desktop_qualifiedBuyBox" data-csa-c-asin="B0C5F1QYJ9"
+                                data-csa-c-is-in-initial-active-row="false" data-csa-c-id="9az49y-k8u6k0-v1y9la-a7fsav"
+                                data-cel-widget="desktop_qualifiedBuyBox">
+                                <div class="a-section a-spacing-none a-padding-none">
+                                    
+                                       
+                                        <div id="amazonGlobal_feature_div" class="celwidget"
+                                            data-feature-name="amazonGlobal" data-csa-c-type="widget"
+                                            data-csa-c-content-id="amazonGlobal"
+                                            data-csa-c-slot-id="amazonGlobal_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                            data-csa-c-is-in-initial-active-row="false"
+                                            data-csa-c-id="y9og63-wn40zg-phqbor-nvwdte"
+                                            data-cel-widget="amazonGlobal_feature_div">
+                                            <script type="text/javascript">
+                                                P.when('A').execute(function (A) {
+                                                    if (typeof window.agPopOverCallbackHandle === 'undefined') {
+                                                        A.on("a:popover:show:agShipMsgPopover", function (data) {
+                                                            A.ajax("https://fls-na.amazon.com/1/action-impressions/1/OE/amazon-global/action/amazon_global_shipmsg_:activated_popover?marketplaceId=ATVPDKIKX0DER&requestId=K7GGV70TK68KYP5BXT2P&session=140-3877243-2089249", { method: "get" });
+                                                        });
+                                                        window.agPopOverCallbackHandle = true;
+                                                    }
+                                                });
+                                            </script>
+                                            <script type="text/javascript">
+                                                P.when('A').execute(function (A) {
+                                                    if (typeof window.agMessageSeenCallbackHandle === 'undefined') {
+                                                        A.on.afterLoad(function () {
+                                                            A.ajax("https://fls-na.amazon.com/1/action-impressions/1/OE/amazon-global/action/amazon_global_shipmsg_:seen_shiponly_message?marketplaceId=ATVPDKIKX0DER&requestId=K7GGV70TK68KYP5BXT2P&session=140-3877243-2089249", { method: "get" });
+                                                        });
+                                                        window.agMessageSeenCallbackHandle = true;
+                                                    }
+                                                });
+                                            </script>
+                                            <script type="text/javascript">
+                                                P.when('A').execute(function (A) {
+                                                    recordHelpAndNavigate = function (navigateFn) {
+                                                        navigateFn();
+                                                        A.ajax("https://fls-na.amazon.com/1/action-impressions/1/OE/amazon-global/action/amazon_global_shipmsg_:viewed_help?marketplaceId=ATVPDKIKX0DER&requestId=K7GGV70TK68KYP5BXT2P&session=140-3877243-2089249", { method: "get" });
+                                                    };
+                                                });
+                                            </script>
+                                            
+                                            <div class="a-popover-preload" id="a-popover-agShipMsgPopover">
+                                                <h3>Detalles de envío y tarifa</h3>
+
+                                                <hr aria-hidden="true" class="a-spacing-top-small a-divider-normal">
+                                                <table class="a-lineitem">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="a-span9 a-text-left"> <span
+                                                                    class="a-size-base a-color-secondary"> Precio
+                                                                </span> </td>
+                                                            <td class="a-span1 a-text-right"> </td>
+                                                            <td class="a-span2 a-text-right"> <span
+                                                                    class="a-size-base a-color-base"> US$00.00 </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="a-span9 a-text-left"> <span
+                                                                    class="a-size-base a-color-secondary"> Envío de
+                                                                    AmazonGlobal </span> </td>
+                                                            <td class="a-span1 a-text-right"> </td>
+                                                            <td class="a-span2 a-text-right"> <span
+                                                                    class="a-size-base a-color-base"> US$32.34 </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="a-span9 a-text-left"> <span
+                                                                    class="a-size-base a-color-secondary"> <a
+                                                                        href="/-/es/gp/help/customer/display.html?ie=UTF8&amp;pop-up=1&amp;nodeId=201117970&amp;ref=amazon_global_shipmsg_viewed_help"
+                                                                        target="AmazonHelp"
+                                                                        onclick="return recordHelpAndNavigate(function() {amz_js_PopWin(this.href,'AmazonHelp','width=550,height=550,resizable=1,scrollbars=1,toolbar=0,status=0');})">
+                                                                        Depósito de cuotas de importación estimadas</a>
+                                                                </span> </td>
+                                                            <td class="a-span1 a-text-right"> </td>
+                                                            <td class="a-span2 a-text-right"> <span
+                                                                    class="a-size-base a-color-base"> US$0.00 </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3">
+                                                                <hr aria-hidden="true"
+                                                                    class="a-spacing-top-small a-divider-normal">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="a-span9 a-text-left"> <span
+                                                                    class="a-size-base a-color-secondary">Total</span>
+                                                            </td>
+                                                            <td class="a-span1 a-text-right"></td>
+                                                            <td class="a-span2 a-text-right"> <span
+                                                                    class="a-size-base a-color-base"> US$73.55 </span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div> <br>
+                                        </div>
+                                        <div id="couponsInBuybox_feature_div" class="celwidget"
+                                            data-feature-name="couponsInBuybox" data-csa-c-type="widget"
+                                            data-csa-c-content-id="couponsInBuybox"
+                                            data-csa-c-slot-id="couponsInBuybox_feature_div"
+                                            data-csa-c-asin="B0C5F1QYJ9" data-csa-c-is-in-initial-active-row="false"
+                                            data-csa-c-id="z4dk48-us3w4y-vkh4g5-a3c0aw"
+                                            data-cel-widget="couponsInBuybox_feature_div">
+                                        </div>
+                                       
+                                            <div id="selectQuantity" class="a-section a-spacing-none a-padding-none">
+                                                <span class="a-declarative" data-action="quantity-dropdown"
+                                                    data-csa-c-type="widget"
+                                                    data-csa-c-func-deps="aui-da-quantity-dropdown"
+                                                    data-quantity-dropdown="{}"
+                                                    data-csa-c-id="1nurov-thaa00-girae1-gq7mom">
+                                                    <div class="a-row a-spacing-base">
+                                                        <div class="a-column a-span12 a-text-left"> <input type="hidden"
+                                                                name="items[0.base][quantity]" value="1"
+                                                                autocomplete="off">
+                                                            <span class="a-dropdown-container"><label for="quantity"
+                                                                    class="a-native-dropdown">Cantidad:</label><select
+                                                                    name="quantity" autocomplete="off" id="quantity"
+                                                                    tabindex="0" data-action="a-dropdown-select"
+                                                                    class="a-native-dropdown a-declarative"
+                                                                    control-id="ControlID-4">
+                                                                    <option value="1" selected="">1 </option>
+                                                                    <option value="2">2 </option>
+                                                                    <option value="3">3 </option>
+                                                                    <option value="4">4 </option>
+                                                                    <option value="5">5 </option>
+                                                                    <option value="6">6 </option>
+                                                                    <option value="7">7 </option>
+                                                                    <option value="8">8 </option>
+                                                                    <option value="9">9 </option>
+                                                                    <option value="10">10 </option>
+                                                                    <option value="11">11 </option>
+                                                                    <option value="12">12 </option>
+                                                                    <option value="13">13 </option>
+                                                                    <option value="14">14 </option>
+                                                                    <option value="15">15 </option>
+                                                                    <option value="16">16 </option>
+                                                                    <option value="17">17 </option>
+                                                                    <option value="18">18 </option>
+                                                                    <option value="19">19 </option>
+                                                                    <option value="20">20 </option>
+                                                                    <option value="21">21 </option>
+                                                                    <option value="22">22 </option>
+                                                                    <option value="23">23 </option>
+                                                                    <option value="24">24 </option>
+                                                                    <option value="25">25 </option>
+                                                                    <option value="26">26 </option>
+                                                                    <option value="27">27 </option>
+                                                                    <option value="28">28 </option>
+                                                                    <option value="29">29 </option>
+                                                                    <option value="30">30 </option>
+                                                                </select><span tabindex="-1"
+                                                                    class="a-button a-button-dropdown a-button-small"
+                                                                    aria-hidden="true" id="a-autoid-0"
+                                                                    style="min-width: 0%;"><span
+                                                                        class="a-button-inner"><span
+                                                                            class="a-button-text a-declarative"
+                                                                            data-csa-c-func-deps="aui-da-a-dropdown-button"
+                                                                            data-csa-c-type="widget"
+                                                                            data-csa-interaction-events="click"
+                                                                            data-action="a-dropdown-button"
+                                                                            aria-hidden="true" id="a-autoid-0-announce"
+                                                                            data-csa-c-id="5xj1hk-1g19d3-slfab2-2qhzo9"><span
+                                                                                class="a-dropdown-label">Cantidad:</span><span
+                                                                                class="a-dropdown-prompt">1
+                                                                            </span></span><i
+                                                                            class="a-icon a-icon-dropdown"></i></span></span></span>
+                                                        </div>
+                                                    </div>
+                                                </span> </div>
+                                        </div>
+                                    </div>
+                                    <div id="soldByThirdPartyRelocate_feature_div" class="celwidget"
+                                        data-feature-name="soldByThirdPartyRelocate" data-csa-c-type="widget"
+                                        data-csa-c-content-id="soldByThirdPartyRelocate"
+                                        data-csa-c-slot-id="soldByThirdPartyRelocate_feature_div"
+                                        data-csa-c-asin="B0C5F1QYJ9" data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="k6fbd3-lrbklj-rsyhx5-oirv8k"
+                                        data-cel-widget="soldByThirdPartyRelocate_feature_div">
+                                    </div>
+                                    <div id="twisterPlusPriceSubtotalWWDesktop_feature_div" class="celwidget"
+                                        data-feature-name="twisterPlusPriceSubtotalWWDesktop" data-csa-c-type="widget"
+                                        data-csa-c-content-id="twisterPlusPriceSubtotalWWDesktop"
+                                        data-csa-c-slot-id="twisterPlusPriceSubtotalWWDesktop_feature_div"
+                                        data-csa-c-asin="B0C5F1QYJ9" data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="8oe79k-1ccpdm-bx0bc4-wibmwl"
+                                        data-cel-widget="twisterPlusPriceSubtotalWWDesktop_feature_div">
+                                        <input type="hidden" id="twister-plus-price-data-price" value="00.00"
+                                            control-id="ControlID-5">
+                                        <input type="hidden" id="twister-plus-price-data-savings" value="0">
+                                        <input type="hidden" id="twister-plus-price-data-price-unit" value="US$">
+
+                                        <div id="tp_price_update_feature_ww"
+                                            class="a-section price-update-feature-ww aok-hidden">
+                                            <div id="tp_price_row_ww"
+                                                class="a-section a-spacing-small price-update-row-ww aok-hidden"> <span
+                                                    id="price_block_currency_symbol_ww"
+                                                    class="a-size-medium a-color-price a-price-symbol">US$</span><!--Adding space based
+on hasSpace --><!--To remove span
+space--><!--To remove
+span space--><span class="a-size-medium a-text-bold"><!--To
+remove span space--><span id="tp_price_block_total_price_ww" class="a-price" data-a-size="m" data-a-color="price"><span
+                                                            class="a-offscreen">US$00.00</span><span
+                                                            aria-hidden="true"><span class="a-price-symbol"></span><span
+                                                                class="a-price-whole">41<span
+                                                                    class="a-price-decimal">.</span></span><span
+                                                                class="a-price-fraction">21</span></span></span><!--To remove
+span space--></span><!--To remove
+span space--> <span id="tp-price-update-payment-period" class="a-size-medium a-color-price aok-hidden"> <span
+                                                        id="tp-price-update-payment-term"></span>
+                                                    (<span id="tp-price-update-payment-term-length"></span>)
+                                                </span> <span id="tp_options_detail" class="a-size-base aok-hidden">
+                                                    Incluye las opciones seleccionadas. </span> <span
+                                                    id="tp_monthly_options_detail" class="a-size-base aok-hidden">
+                                                    Incluye el pago mensual inicial y las opciones seleccionadas.
+                                                </span> <span class="a-size-base"> <span class="a-declarative"
+                                                        data-action="a-popover" data-csa-c-type="widget"
+                                                        data-csa-c-func-deps="aui-da-a-popover"
+                                                        data-a-popover="{&quot;closeButton&quot;:&quot;false&quot;,&quot;name&quot;:&quot;twisterPlusPopOver&quot;,&quot;activate&quot;:&quot;onmouseover&quot;,&quot;width&quot;:&quot;350px&quot;,&quot;position&quot;:&quot;triggerLeft&quot;}"
+                                                        data-csa-c-id="8wbrs4-n07it3-7jhx3n-fmeyou"> <span
+                                                            cssclass="celwidget"
+                                                            cel_widget_id="twisterPlus-celwidget-popover">
+                                                            <a id="price_block_total_price_details_ww"
+                                                                class="a-link-normal" href="#"> Detalles </a> </span>
+                                                    </span>
+                                                    <div class="a-popover-preload" id="a-popover-twisterPlusPopOver">
+                                                        <div id="twister-plus-popover-inner" class="a-section">
+                                                            <div id="twister-plus-tool-tip"
+                                                                class="a-section twister-plus-tool-tip-container">
+                                                                <div id="tp-tool-tip-price-section"
+                                                                    class="a-section a-spacing-base a-spacing-top-base">
+                                                                    <div id="tp-tool-tip-price-block"
+                                                                        class="a-fixed-right-grid a-spacing-small">
+                                                                        <div class="a-fixed-right-grid-inner"
+                                                                            style="padding-right:110px">
+                                                                            <div class="a-fixed-right-grid-col a-col-left"
+                                                                                style="padding-right:4%;float:left;">
+                                                                                <span id="display-string"
+                                                                                    class="a-size-base">Precio</span>
+                                                                                <span
+                                                                                    class="a-size-base tp-tool-tip-quantity-block aok-hidden">
+                                                                                    <span class="a-offscreen"></span>
+                                                                                    <span aria-hidden="true"> <span>
+                                                                                            (</span><!-- Adding comment to avoid span
+space--><!-- Adding comment to avoid span
+space--><span class="a-price-symbol">US$</span><!-- Adding space based on
+hasSpace--><!-- To remove span
+space--><!-- To remove span
+space--><span class="a-price-whole">41<span class="a-price-decimal">.</span></span><span
+                                                                                            class="a-price-fraction">21</span><!-- To remove span
+space--><!-- Adding comment to avoid span
+space--><span>x<span id="tp-item-quantity"></span>)</span> </span> </span> </div>
+                                                                            <div class="a-text-right a-fixed-right-grid-col a-col-right"
+                                                                                style="width:110px;margin-right:-110px;float:left;">
+                                                                                <span id="tp-tool-tip-price"
+                                                                                    class="a-size-base twister-plus-price-template">
+                                                                                    <span class="a-offscreen"></span>
+                                                                                    <span aria-hidden="true"> <span
+                                                                                            id="price-sign-string"
+                                                                                            class="a-size-base"></span>
+                                                                                        <span
+                                                                                            class="a-price-symbol">US$</span><!-- Adding space based on
+hasSpace--><!-- To remove span
+space--><!-- To remove span
+space--><span class="a-price-whole">41<span class="a-price-decimal">.</span></span><span
+                                                                                            class="a-price-fraction">21</span><!-- To remove span
+space--> </span> </span> </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <hr aria-hidden="true"
+                                                                    class="a-spacing-small a-divider-normal">
+                                                                <div id="twister-plus-tool-tip-subtotal-section"
+                                                                    class="a-section a-spacing-base">
+                                                                    <div id="tp-tool-tip-subtotal-price-block"
+                                                                        class="a-fixed-right-grid a-spacing-small">
+                                                                        <div class="a-fixed-right-grid-inner"
+                                                                            style="padding-right:110px">
+                                                                            <div class="a-fixed-right-grid-col a-col-left"
+                                                                                style="padding-right:4%;float:left;">
+                                                                                <span id="display-string"
+                                                                                    class="a-size-base">Subtotal</span>
+                                                                            </div>
+                                                                            <div class="a-text-right a-fixed-right-grid-col a-col-right"
+                                                                                style="width:110px;margin-right:-110px;float:left;">
+                                                                                <span
+                                                                                    class="a-size-medium twister-plus-subtotal-price-template">
+                                                                                    <span
+                                                                                        id="tp-tool-tip-subtotal-price-currency-symbol"
+                                                                                        class="a-size-medium a-color-price a-price-symbol">US$</span><!-- Adding space based on
+hasSpace--><!--To remove span
+space--><!--To remove span
+space--><span class="a-size-medium a-text-bold"><!--To
+remove span space--><span id="tp-tool-tip-subtotal-price-value" class="a-price" data-a-size="m"
+                                                                                            data-a-color="price"><span
+                                                                                                class="a-offscreen">US$00.00</span><span
+                                                                                                aria-hidden="true"><span
+                                                                                                    class="a-price-symbol"></span><span
+                                                                                                    class="a-price-whole">41<span
+                                                                                                        class="a-price-decimal">.</span></span><span
+                                                                                                    class="a-price-fraction">21</span></span></span><!--To remove span
+space--></span><!--To remove span
+space--> </span> </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="tp-tool-tip-monthly-payment-subtotal-price-block"
+                                                                        class="a-fixed-right-grid aok-hidden a-spacing-small">
+                                                                        <div class="a-fixed-right-grid-inner"
+                                                                            style="padding-right:110px">
+                                                                            <div class="a-fixed-right-grid-col a-col-left"
+                                                                                style="padding-right:4%;float:left;">
+                                                                                <span id="display-string"
+                                                                                    class="a-size-base">Subtotal</span>
+                                                                            </div>
+                                                                            <div id="tp-monthly-payment-subtotal-price"
+                                                                                class="a-text-right a-fixed-right-grid-col a-col-right"
+                                                                                style="width:110px;margin-right:-110px;float:left;">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="twister-plus-order-level-monthly-payments-section"
+                                                                        class="a-section aok-hidden">
+                                                                        <hr aria-hidden="true"
+                                                                            class="a-spacing-small a-divider-normal">
+                                                                        <div id="tp-tool-tip-order-level-monthly-payments-price-block"
+                                                                            class="a-fixed-right-grid a-spacing-small">
+                                                                            <div class="a-fixed-right-grid-inner"
+                                                                                style="padding-right:110px">
+                                                                                <div class="a-fixed-right-grid-col a-col-left"
+                                                                                    style="padding-right:4%;float:left;">
+                                                                                    <span id="display-string"
+                                                                                        class="a-size-base a-text-bold"></span>
+                                                                                </div>
+                                                                                <div id="tp-order-level-monthly-payment-subtotal-price"
+                                                                                    class="a-text-right a-fixed-right-grid-col a-col-right"
+                                                                                    style="width:110px;margin-right:-110px;float:left;">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="twister-plus-item-level-monthly-payments-section"
+                                                                        class="a-section aok-hidden">
+                                                                        <hr id="twister-plus-monthly-payments-divider"
+                                                                            aria-hidden="true"
+                                                                            class="a-spacing-small a-divider-normal">
+                                                                        <div id="tp-monthly-payments-breakdown-section"
+                                                                            class="a-section"> <span
+                                                                                class="a-text-bold">Desglose inicial del
+                                                                                pago</span> </div>
+                                                                        <hr aria-hidden="true"
+                                                                            class="a-spacing-small a-divider-normal">
+                                                                        <div id="tp-tool-tip-item-level-monthly-payments-price-block"
+                                                                            class="a-fixed-right-grid a-spacing-small">
+                                                                            <div class="a-fixed-right-grid-inner"
+                                                                                style="padding-right:110px">
+                                                                                <div class="a-fixed-right-grid-col a-col-left"
+                                                                                    style="padding-right:0%;float:left;">
+                                                                                </div>
+                                                                                <div id="tp-item-level-monthly-payment-subtotal-price"
+                                                                                    class="a-text-right a-fixed-right-grid-col a-col-right"
+                                                                                    style="width:110px;margin-right:-110px;float:left;">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="tp-tool-tip-footnote-section"
+                                                                        class="a-section a-spacing-small"> <span
+                                                                            id="tp-footnote-text"
+                                                                            class="a-size-small a-color-secondary">Se
+                                                                            muestran los gastos de envío, la fecha de
+                                                                            entrega y el total del pedido (impuestos
+                                                                            incluidos) al finalizar la compra</span>
+                                                                        <br>
+                                                                    </div>
+                                                                    <div id="tp-tool-tip-strings"
+                                                                        class="a-section a-spacing-small aok-hidden">
+                                                                        <span id="tp-tool-tip-item-strings"
+                                                                            data-item-count-plural-template=" (###itemQuantity artículos)"
+                                                                            data-item-count-singular-template=" (###itemQuantity artículo)">
+                                                                        </span> <span id="tp-tool-tip-footnote-string"
+                                                                            data-monthly-payment-footnote-template="Los pagos mensuales se aplican únicamente al artículo principal, no a las mejoras.">
+                                                                        </span> </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </span> </div>
+                                        </div>
+                                    </div>
+                                    <div id="gestalt_feature_div" class="celwidget" data-feature-name="gestalt"
+                                        data-csa-c-type="widget" data-csa-c-content-id="gestalt"
+                                        data-csa-c-slot-id="gestalt_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="da4zz5-p6gr9d-ydz76k-6rasul"
+                                        data-cel-widget="gestalt_feature_div">
+                                    </div>
+                                    <div id="merchConfigure_feature_div" class="celwidget"
+                                        data-feature-name="merchConfigure" data-csa-c-type="widget"
+                                        data-csa-c-content-id="merchConfigure"
+                                        data-csa-c-slot-id="merchConfigure_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="j0kxfy-kl95bj-axswbw-lrhy2h"
+                                        data-cel-widget="merchConfigure_feature_div">
+                                    </div>
+                                    <div id="addToCart_feature_div" class="celwidget" data-feature-name="addToCart"
+                                        data-csa-c-type="widget" data-csa-c-content-id="addToCart"
+                                        data-csa-c-slot-id="addToCart_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="qp07pt-hlu2p0-mnv7q9-99q6ow"
+                                        data-cel-widget="addToCart_feature_div">
+                                        <script type="a-state"
+                                            data-a-state="{&quot;key&quot;:&quot;atc-page-state&quot;}">{"shouldUseNatc":true}</script>
+                                        <div class="a-button-stack"> <span class="a-declarative"
+                                                data-action="dp-pre-atc-declarative" data-csa-c-type="widget"
+                                                data-csa-c-func-deps="aui-da-dp-pre-atc-declarative"
+                                                data-dp-pre-atc-declarative="{}" id="atc-declarative"
+                                                data-csa-c-id="pywvep-bq0pya-axg8ri-kptw8f"> <span
+                                                    id="submit.add-to-cart"
+                                                    class="a-button a-spacing-small a-button-primary a-button-icon natc-enabled"><span
+                                                        class="a-button-inner"><i class="a-icon a-icon-cart"></i><input
+                                                            id="add-to-cart-button" name="submit.add-to-cart"
+                                                            title="Agregar al Carrito"
+                                                            data-hover="Seleccionar <b>__dims__</b> de la izquierda<br> para agregar al carrito de compras"
+                                                            data-ref="" class="a-button-input" type="submit"
+                                                            value="Agregar al Carrito"
+                                                            aria-labelledby="submit.add-to-cart-announce"
+                                                            formaction="/cart/add-to-cart/ref=dp_start-bbf_1_glance"
+                                                            control-id="ControlID-6"><span
+                                                            id="submit.add-to-cart-announce" class="a-button-text"
+                                                            aria-hidden="true">Agregar al Carrito</span></span></span>
+                                            </span> </div>
+                                        <div class="dp-cif aok-hidden"
+                                            data-feature-details="{&quot;name&quot;:&quot;atc&quot;,&quot;isInteractive&quot;:false}">
+                                        </div>
+                                        <script type="text/javascript">(function (f) { var _np = (window.P._namespace("DetailPageBuyBoxTemplate")); if (_np.guardFatal) { _np.guardFatal(f)(_np); } else { f(_np); } }(function (P) {
+                                                P.now().execute('dp-mark-atc', function () {
+                                                    if (typeof window.markFeatureRender === 'function') {
+                                                        window.markFeatureRender('atc', { isInteractive: false });
+                                                    }
+                                                });
+                                            }));</script>
+                                    </div>
+                                    <div id="buyNow_feature_div" class="celwidget" data-feature-name="buyNow"
+                                        data-csa-c-type="widget" data-csa-c-content-id="buyNow"
+                                        data-csa-c-slot-id="buyNow_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="e21hfq-pcosz1-i2ze3v-fwlygp"
+                                        data-cel-widget="buyNow_feature_div">
+                                        <div class="a-button-stack">
+                                            <div id="buyNow" class="a-section a-spacing-base">
+                                                <div id="turboState"
+                                                    class="a-section a-spacing-none a-padding-none turbo-checkout-state-root">
+                                                    <script type="a-state"
+                                                        data-a-state="{&quot;key&quot;:&quot;turbo-checkout-page-state&quot;}">{"turboWeblab":"RCX_CHECKOUT_TURBO_DESKTOP_NONPRIME_87784","strings":{"TURBO_CHECKOUT_HEADER":"Compra ahora: Hydro Flask Wide Mouth Chug Cap","TURBO_LOADING_TEXT":"Cargando el resumen de tu pedido"},"additionalWeblabs":"{\"RCX_CHECKOUT_DISABLE_TURBO_FOR_NPA_EXPERIMENT_543201\":\"\"}","inputs":{"verificationSessionID":"140-3877243-2089249","a":"B0C5F1QYJ9","quantity":"1","oid":"","incentivizedCart":"","addressId":""},"configurations":{"isSignInEnabled":true,"initiateSelector":"#buy-now-button","prefetchEnabled":true},"buttonID":"buy-now","eligibility":{"isEligible":false},"turboWeblabTreatment":"T2","timeout":"5000"}</script>
+                                                </div>
+                                                <script type="text/javascript">(function (f) { var _np = (window.P._namespace("TurboClientDetailPage")); if (_np.guardFatal) { _np.guardFatal(f)(_np); } else { f(_np); } }(function (P) {
+                                                        P.when('cf').execute(function executeTurboAssetsLoadTriggerEvent() {
+                                                            P.now('turbo-checkout-assets-load-trigger').execute(function (assetsLoadTrigger) {
+                                                                if (assetsLoadTrigger) {
+                                                                    logTurboCounter("AssetTriggerDedupe");
+                                                                    return;
+                                                                }
+
+                                                                try {
+                                                                    P.declare('turbo-checkout-assets-load-trigger', true);
+                                                                    logTurboCounter('AssetTrigger');
+                                                                } catch (e) {
+                                                                    logTurboCounter('AssetTriggerException');
+                                                                }
+                                                            });
+
+                                                            function logTurboCounter(name) {
+                                                                var counter = 'turboCheckout' + name;
+                                                                if (window.ue && window.ue.count) {
+                                                                    window.ue.count(counter, 1);
+                                                                }
+                                                            }
+                                                        });
+                                                    }));</script> <span class="a-declarative" data-action="a-modal" data-csa-c-type="widget"
+                                                    data-csa-c-func-deps="aui-da-a-modal"
+                                                    data-a-modal="{&quot;name&quot;:&quot;turbo&quot;}"
+                                                    id="turbo-checkout-modal"
+                                                    data-csa-c-id="ylybl0-tamb0i-tif5dq-d8vs14"></span> <span
+                                                    id="submit.buy-now"
+                                                    class="a-button a-button-oneclick a-button-icon onml-buy-now-button"><span
+                                                        class="a-button-inner"><i
+                                                            class="a-icon a-icon-buynow"></i><input id="buy-now-button"
+                                                            name="submit.buy-now" title="Comprar ahora"
+                                                            data-hover="Seleccionar <b>__dims__" class="a-button-input"
+                                                            type="submit" aria-labelledby="submit.buy-now-announce"
+                                                            control-id="ControlID-7"><span id="submit.buy-now-announce"
+                                                            class="a-button-text" aria-hidden="true"> Comprar ahora
+                                                        </span></span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="twisterPlusBuyBoxMessage_feature_div" class="celwidget"
+                                        data-feature-name="twisterPlusBuyBoxMessage" data-csa-c-type="widget"
+                                        data-csa-c-content-id="twisterPlusBuyBoxMessage"
+                                        data-csa-c-slot-id="twisterPlusBuyBoxMessage_feature_div"
+                                        data-csa-c-asin="B0C5F1QYJ9" data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="koqfmh-4d2eii-otzzye-tqkxon"
+                                        data-cel-widget="twisterPlusBuyBoxMessage_feature_div">
+                                        <div class="a-section">
+                                            <div class="a-box a-alert-inline a-alert-inline-error tp-bbm-info-message-container aok-hidden a-spacing-base"
+                                                role="alert">
+                                                <div class="a-box-inner a-alert-container"><i
+                                                        class="a-icon a-icon-alert"></i>
+                                                    <div class="a-alert-content"> <span class="tp-bbm-info-message"> Las
+                                                            mejoras que elegiste no están disponibles para este
+                                                            vendedor. </span> <span class="a-declarative"
+                                                            data-action="a-popover" data-csa-c-type="widget"
+                                                            data-csa-c-func-deps="aui-da-a-popover"
+                                                            data-a-popover="{&quot;closeButton&quot;:&quot;false&quot;,&quot;name&quot;:&quot;twisterPlusBuyBoxMessagePopOver&quot;,&quot;activate&quot;:&quot;onmouseover&quot;,&quot;width&quot;:&quot;250px&quot;,&quot;position&quot;:&quot;triggerBottom&quot;}"
+                                                            data-csa-c-id="1u4u48-xar599-ieqgzf-59mu9c"> <a
+                                                                id="tp_bbm_info_message_details"
+                                                                class="a-size-base a-link-normal" href="#"> Detalles
+                                                            </a> </span>
+                                                        <div class="a-popover-preload"
+                                                            id="a-popover-twisterPlusBuyBoxMessagePopOver">
+                                                            <div id="tp-bbm-popover-inner" class="a-section">
+                                                                <div id="twister-plus-unavailable-items-tool-tip"
+                                                                    class="a-section twister-plus-unavailable-items-tool-tip">
+                                                                    <div class="a-section"> <span
+                                                                            id="tp_bbm_info_message"
+                                                                            class="a-size-base"> Para agregar las
+                                                                            siguientes mejoras a tu compra, elige un
+                                                                            vendedor diferente. </span> </div>
+                                                                    <hr aria-hidden="true"
+                                                                        class="a-spacing-base a-divider-text">
+                                                                    <div
+                                                                        class="a-section twister-plus-unavailable-message-item-template aok-hidden">
+                                                                        <span
+                                                                            class="a-size-base a-text-bold">%cardName%</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="a-box a-alert-inline a-alert-inline-error tp-bbm-info-message-with-card-name-container aok-hidden a-spacing-base"
+                                                role="alert">
+                                                <div class="a-box-inner a-alert-container"><i
+                                                        class="a-icon a-icon-alert"></i>
+                                                    <div class="a-alert-content"> <span
+                                                            class="tp-bbm-info-message-with-card-name"> ${cardName} no
+                                                            disponible para el vendedor que elegiste </span> </div>
+                                                </div>
+                                            </div>
+                                            <div class="a-box a-alert-inline a-alert-inline-error tp-bbm-info-message-quantity-restriction-container aok-hidden a-spacing-base"
+                                                role="alert">
+                                                <div class="a-box-inner a-alert-container"><i
+                                                        class="a-icon a-icon-alert"></i>
+                                                    <div class="a-alert-content"> <span
+                                                            class="tp-bbm-info-message-quantity-restriction">
+                                                            ${cardName} no disponible para cantidades mayores a
+                                                            ${maxQuantity}. </span> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="secureTransactionODF_feature_div" class="celwidget"
+                                        data-feature-name="secureTransactionODF" data-csa-c-type="widget"
+                                        data-csa-c-content-id="secureTransactionODF"
+                                        data-csa-c-slot-id="secureTransactionODF_feature_div"
+                                        data-csa-c-asin="B0C5F1QYJ9" data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="h1z942-y1bluh-xjcqrl-837l8e"
+                                        data-cel-widget="secureTransactionODF_feature_div">
+                                    </div>
+                                    <div id="offerDisplayFeatures_desktop" class="celwidget"
+                                        data-feature-name="offerDisplayFeatures_desktop" data-csa-c-type="widget"
+                                        data-csa-c-content-id="offerDisplayFeatures_desktop"
+                                        data-csa-c-slot-id="offerDisplayFeatures_desktop" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="s0r9c1-lhjwix-id7c9j-994fha"
+                                        data-cel-widget="offerDisplayFeatures_desktop">
+                                        <div id="offer-display-features" data-csa-c-content-id="main-container"
+                                            data-csa-c-slot-id="odf-desktop-loaded" data-csa-c-type="widget"
+                                            class="a-section a-spacing-base offer-display-features"
+                                            data-csa-c-id="69ernw-qdnu4q-cirs54-bznstv">
+                                            <div data-a-expander-name="offer-display-features-expander"
+                                                class="a-row a-expander-container a-expander-partial-collapse-container offer-display-features-expander"
+                                                style="max-height: none;">
+                                                <div aria-expanded="false"
+                                                    class="a-expander-content a-expander-partial-collapse-content">
+                                                    <div class="offer-display-features-container"
+                                                        displayable-row-count="4">
+                                                        <div id="secureTransactionFeature_feature_div" class="celwidget"
+                                                            data-feature-name="secureTransactionFeature"
+                                                            data-csa-c-type="widget"
+                                                            data-csa-c-content-id="secureTransactionFeature"
+                                                            data-csa-c-slot-id="secureTransactionFeature_feature_div"
+                                                            data-csa-c-asin="B0C5F1QYJ9"
+                                                            data-csa-c-is-in-initial-active-row="false"
+                                                            data-csa-c-id="8y5raz-f60775-s7ffty-ho83s6"
+                                                            data-cel-widget="secureTransactionFeature_feature_div">
+                                                        </div>
+                                                        <div id="fulfillerInfoFeature_feature_div" class="celwidget"
+                                                            data-feature-name="fulfillerInfoFeature"
+                                                            data-csa-c-type="widget"
+                                                            data-csa-c-content-id="fulfillerInfoFeature"
+                                                            data-csa-c-slot-id="fulfillerInfoFeature_feature_div"
+                                                            data-csa-c-asin="B0C5F1QYJ9"
+                                                            data-csa-c-is-in-initial-active-row="false"
+                                                            data-csa-c-id="3gl50s-1nysmj-z3i3ft-a1eiq1"
+                                                            data-cel-widget="fulfillerInfoFeature_feature_div">
+                                                            <div class="offer-display-feature-label celwidget"
+                                                                offer-display-feature-name="desktop-fulfiller-info"
+                                                                data-csa-c-type="widget"
+                                                                data-csa-c-slot-id="odf-feature-label-desktop-fulfiller-info"
+                                                                data-csa-c-content-id="desktop-fulfiller-info"
+                                                                data-cel-widget="desktop-fulfiller-info"
+                                                                data-csa-c-id="pwx3im-eantb-a2oauo-kv21gd">
+                                                                <div class="a-spacing-none">
+                                                                    <span class="a-size-small a-color-tertiary">Enviado
+                                                                        por</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="offer-display-feature-text"
+                                                                offer-display-feature-name="desktop-fulfiller-info"
+                                                                data-csa-c-type="widget"
+                                                                data-csa-c-slot-id="odf-feature-text-desktop-fulfiller-info"
+                                                                data-csa-c-content-id="desktop-fulfiller-info"
+                                                                data-csa-c-id="8fvpkg-m8jbxy-1lhu20-kzvlj7">
+                                                                <div class="offer-display-feature-text a-spacing-none">
+                                                                    <span
+                                                                        class="a-size-small offer-display-feature-text-message">Amazon.com</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="aok-hidden offer-display-feature-side-sheet">
+                                                                <div class="a-fixed-left-grid a-spacing-small">
+                                                                    <div class="a-fixed-left-grid-inner"
+                                                                        style="padding-left:130px">
+                                                                        <div data-csa-c-content-id="desktop-fulfiller-info"
+                                                                            data-csa-c-slot-id="odf-side-sheet-feature-label-desktop-fulfiller-info"
+                                                                            data-csa-c-type="widget"
+                                                                            class="a-fixed-left-grid-col offer-display-feature-side-sheet-label-column a-col-left"
+                                                                            style="width:130px;margin-left:-130px;float:left;"
+                                                                            data-csa-c-id="qv5zkt-1602g0-bspfmt-z1j3c1">
+                                                                            <span class="a-size-small a-color-tertiary">
+                                                                                Enviado por </span> </div>
+                                                                        <div data-csa-c-content-id="desktop-fulfiller-info"
+                                                                            data-csa-c-slot-id="odf-side-sheet-feature-text-desktop-fulfiller-info"
+                                                                            data-csa-c-type="widget"
+                                                                            data-side-sheet-attribute-name="desktop-fulfiller-info"
+                                                                            class="a-fixed-left-grid-col offer-display-feature-side-sheet-content-column a-col-right"
+                                                                            style="padding-left:0%;float:left;"
+                                                                            data-csa-c-id="wlli2k-p5c4v6-sp2d8w-uwxqjo">
+                                                                            <div class="a-row"> <span
+                                                                                    class="a-size-small">Amazon.com</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <hr aria-hidden="true"
+                                                                    class="a-spacing-small a-divider-normal">
+                                                            </div>
+                                                        </div>
+                                                        <div id="merchantInfoFeature_feature_div" class="celwidget"
+                                                            data-feature-name="merchantInfoFeature"
+                                                            data-csa-c-type="widget"
+                                                            data-csa-c-content-id="merchantInfoFeature"
+                                                            data-csa-c-slot-id="merchantInfoFeature_feature_div"
+                                                            data-csa-c-asin="B0C5F1QYJ9"
+                                                            data-csa-c-is-in-initial-active-row="false"
+                                                            data-csa-c-id="umg35r-j247gl-jjrgt4-kpo1o0"
+                                                            data-cel-widget="merchantInfoFeature_feature_div">
+                                                            <div class="offer-display-feature-label celwidget"
+                                                                offer-display-feature-name="desktop-merchant-info"
+                                                                data-csa-c-type="widget"
+                                                                data-csa-c-slot-id="odf-feature-label-desktop-merchant-info"
+                                                                data-csa-c-content-id="desktop-merchant-info"
+                                                                data-cel-widget="desktop-merchant-info"
+                                                                data-csa-c-id="u4w3su-mk2s5s-ao4njr-6v84v">
+                                                                <div class="a-spacing-none">
+                                                                    <span class="a-size-small a-color-tertiary">Vendido
+                                                                        por</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="offer-display-feature-text"
+                                                                offer-display-feature-name="desktop-merchant-info"
+                                                                data-csa-c-type="widget"
+                                                                data-csa-c-slot-id="odf-feature-text-desktop-merchant-info"
+                                                                data-csa-c-content-id="desktop-merchant-info"
+                                                                data-csa-c-id="nravui-jun4ze-pbutn8-b6ffrs">
+                                                                <div class="offer-display-feature-text a-spacing-none">
+                                                                    <span
+                                                                        class="a-size-small offer-display-feature-text-message">Amazon.com</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="aok-hidden offer-display-feature-side-sheet">
+                                                                <div class="a-fixed-left-grid a-spacing-small">
+                                                                    <div class="a-fixed-left-grid-inner"
+                                                                        style="padding-left:130px">
+                                                                        <div data-csa-c-content-id="desktop-merchant-info"
+                                                                            data-csa-c-slot-id="odf-side-sheet-feature-label-desktop-merchant-info"
+                                                                            data-csa-c-type="widget"
+                                                                            class="a-fixed-left-grid-col offer-display-feature-side-sheet-label-column a-col-left"
+                                                                            style="width:130px;margin-left:-130px;float:left;"
+                                                                            data-csa-c-id="a8w23z-h05vob-jrr83h-lxngiz">
+                                                                            <span class="a-size-small a-color-tertiary">
+                                                                                Vendido por </span> </div>
+                                                                        <div data-csa-c-content-id="desktop-merchant-info"
+                                                                            data-csa-c-slot-id="odf-side-sheet-feature-text-desktop-merchant-info"
+                                                                            data-csa-c-type="widget"
+                                                                            data-side-sheet-attribute-name="desktop-merchant-info"
+                                                                            class="a-fixed-left-grid-col offer-display-feature-side-sheet-content-column a-col-right"
+                                                                            style="padding-left:0%;float:left;"
+                                                                            data-csa-c-id="aya2ld-icyvu3-k6x55m-uzladm">
+                                                                            <div class="a-row"> <span
+                                                                                    class="a-size-small">Amazon.com</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <hr aria-hidden="true"
+                                                                    class="a-spacing-small a-divider-normal">
+                                                            </div>
+                                                        </div>
+                                                        <div id="returnsInfoFeature_feature_div" class="celwidget"
+                                                            data-feature-name="returnsInfoFeature"
+                                                            data-csa-c-type="widget"
+                                                            data-csa-c-content-id="returnsInfoFeature"
+                                                            data-csa-c-slot-id="returnsInfoFeature_feature_div"
+                                                            data-csa-c-asin="B0C5F1QYJ9"
+                                                            data-csa-c-is-in-initial-active-row="false"
+                                                            data-csa-c-id="5pgfom-le6g5p-bohjiy-ai2b98"
+                                                            data-cel-widget="returnsInfoFeature_feature_div">
+                                                            <div class="offer-display-feature-label celwidget"
+                                                                offer-display-feature-name="desktop-return-info"
+                                                                data-csa-c-type="widget"
+                                                                data-csa-c-slot-id="odf-feature-label-desktop-return-info"
+                                                                data-csa-c-content-id="desktop-return-info"
+                                                                data-cel-widget="desktop-return-info"
+                                                                data-csa-c-id="zbz65c-ptnw8i-ptvb42-lslti4">
+                                                                <div class="a-spacing-none">
+                                                                    <span
+                                                                        class="a-size-small a-color-tertiary">Devoluciones</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="offer-display-feature-text"
+                                                                offer-display-feature-name="desktop-return-info"
+                                                                data-csa-c-type="widget"
+                                                                data-csa-c-slot-id="odf-feature-text-desktop-return-info"
+                                                                data-csa-c-content-id="desktop-return-info"
+                                                                data-csa-c-id="573vcb-b2afuf-yar3ab-cabbvl">
+                                                                <span class="a-declarative" data-action="a-popover"
+                                                                    data-csa-c-type="widget"
+                                                                    data-csa-c-func-deps="aui-da-a-popover"
+                                                                    data-a-popover="{&quot;max-width&quot;:&quot;500&quot;,&quot;name&quot;:&quot;offerDisplayFeatureReturnsPopover&quot;,&quot;activate&quot;:&quot;onmouseover&quot;,&quot;position&quot;:&quot;triggerBottom&quot;}"
+                                                                    data-csa-c-id="opovfj-2hw931-kcqbsj-37y9p2"> <a
+                                                                        data-csa-c-content-id="odf-desktop-return-info"
+                                                                        data-csa-c-slot-id="odf-desktop-return-info-anchor-text"
+                                                                        data-csa-c-type="widget"
+                                                                        class="a-link-normal a-popover-trigger a-declarative"
+                                                                        href="javascript:void(0)" role="button"
+                                                                        data-csa-c-id="qqh4qu-30ruf6-tuuwhp-shxiq7">
+                                                                        <span
+                                                                            class="a-size-small offer-display-feature-text-message">Se
+                                                                            puede devolver hasta el 31&nbsp;de enero de
+                                                                            2024</span> </a> </span>
+                                                                <div class="a-popover-preload"
+                                                                    id="a-popover-offerDisplayFeatureReturnsPopover">
+                                                                    <div data-csa-c-content-id="desktop-return-info"
+                                                                        data-csa-c-slot-id="odf-desktop-return-info-popover-description"
+                                                                        data-csa-c-type="widget"
+                                                                        class="a-section a-padding-base"
+                                                                        data-csa-c-id="7oe8fg-kh0gh5-zb27oc-po2933">
+                                                                        <div class="a-row a-spacing-base"> <span
+                                                                                class="a-text-bold">Se puede devolver
+                                                                                hasta el 31&nbsp;de enero de 2024</span>
+                                                                        </div>
+                                                                        <div class="a-row a-spacing-micro"> En la
+                                                                            temporada navideña de 2023, los artículos
+                                                                            elegibles comprados entre el 1&nbsp;de
+                                                                            noviembre y el 31&nbsp;de diciembre de 2023
+                                                                            se podrán devolver hasta el 31 de enero de
+                                                                            2024 </div>
+                                                                        <div class="a-row a-spacing-micro"> <a
+                                                                                id="desktop-return-info-link-text"
+                                                                                data-csa-c-content-id="desktop-return-info"
+                                                                                data-csa-c-slot-id="odf-desktop-return-info-hyperlink"
+                                                                                data-csa-c-type="widget"
+                                                                                class="a-link-normal" target="_blank"
+                                                                                rel="noopener"
+                                                                                href="/-/es/gp/help/customer/display.html?nodeId=GKM69DUUYKQWKWX7&amp;ref_=dp_ret_policy"
+                                                                                data-csa-c-id="vte8q5-jl2gj4-nkvups-8j357d">
+                                                                                Lea la política de devoluciones completa
+                                                                            </a> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="aok-hidden offer-display-feature-side-sheet">
+                                                                <div class="a-fixed-left-grid a-spacing-small">
+                                                                    <div class="a-fixed-left-grid-inner"
+                                                                        style="padding-left:130px">
+                                                                        <div data-csa-c-content-id="desktop-return-info"
+                                                                            data-csa-c-slot-id="odf-side-sheet-feature-label-desktop-return-info"
+                                                                            data-csa-c-type="widget"
+                                                                            class="a-fixed-left-grid-col offer-display-feature-side-sheet-label-column a-col-left"
+                                                                            style="width:130px;margin-left:-130px;float:left;"
+                                                                            data-csa-c-id="bd8svw-mlbho3-3k2uwa-gcf3u9">
+                                                                            <span class="a-size-small a-color-tertiary">
+                                                                                Devoluciones </span> </div>
+                                                                        <div data-csa-c-content-id="desktop-return-info"
+                                                                            data-csa-c-slot-id="odf-side-sheet-feature-text-desktop-return-info"
+                                                                            data-csa-c-type="widget"
+                                                                            data-side-sheet-attribute-name="desktop-return-info"
+                                                                            class="a-fixed-left-grid-col offer-display-feature-side-sheet-content-column a-col-right"
+                                                                            style="padding-left:0%;float:left;"
+                                                                            data-csa-c-id="t0h9z2-whxju8-k5aqtx-m93umy">
+                                                                            <div class="a-row">
+                                                                                <div data-csa-c-content-id="desktop-return-info"
+                                                                                    data-csa-c-slot-id="odf-desktop-return-info-side-sheet-anchor-text"
+                                                                                    data-csa-c-type="widget"
+                                                                                    class="a-row a-spacing-micro"
+                                                                                    data-csa-c-id="w4xd5k-kswf8t-83wkah-nijunt">
+                                                                                    <span class="a-size-small">Se puede
+                                                                                        devolver hasta el 31&nbsp;de
+                                                                                        enero de 2024</span> </div>
+                                                                                <div data-csa-c-content-id="desktop-return-info"
+                                                                                    data-csa-c-slot-id="odf-desktop-return-info-side-sheet-description"
+                                                                                    data-csa-c-type="widget"
+                                                                                    class="a-row a-spacing-micro"
+                                                                                    data-csa-c-id="bz7xoa-k9p3sf-shca9i-xquamr">
+                                                                                    <span class="a-size-small">En la
+                                                                                        temporada navideña de 2023, los
+                                                                                        artículos elegibles comprados
+                                                                                        entre el 1&nbsp;de noviembre y
+                                                                                        el 31&nbsp;de diciembre de 2023
+                                                                                        se podrán devolver hasta el 31
+                                                                                        de enero de 2024</span> </div>
+                                                                                <div class="a-row a-spacing-micro"> <a
+                                                                                        id="desktop-return-info-link-text"
+                                                                                        data-csa-c-content-id="desktop-return-info"
+                                                                                        data-csa-c-slot-id="odf-desktop-return-info-hyperlink"
+                                                                                        data-csa-c-type="widget"
+                                                                                        class="a-link-normal"
+                                                                                        target="_blank" rel="noopener"
+                                                                                        href="/-/es/gp/help/customer/display.html?nodeId=GKM69DUUYKQWKWX7&amp;ref_=dp_ret_policy"
+                                                                                        data-csa-c-id="hnfewz-p255mw-nu4zfj-4k8czm">
+                                                                                        <span class="a-size-small">Lea
+                                                                                            la política de devoluciones
+                                                                                            completa</span> </a> </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <hr aria-hidden="true"
+                                                                    class="a-spacing-small a-divider-normal">
+                                                            </div>
+                                                        </div>
+                                                        <div id="secureTransactionReorderT1_feature_div"
+                                                            class="celwidget"
+                                                            data-feature-name="secureTransactionReorderT1"
+                                                            data-csa-c-type="widget"
+                                                            data-csa-c-content-id="secureTransactionReorderT1"
+                                                            data-csa-c-slot-id="secureTransactionReorderT1_feature_div"
+                                                            data-csa-c-asin="B0C5F1QYJ9"
+                                                            data-csa-c-is-in-initial-active-row="false"
+                                                            data-csa-c-id="q7u7ab-pigtcl-7lzepp-6dm20c"
+                                                            data-cel-widget="secureTransactionReorderT1_feature_div">
+                                                            <div class="offer-display-feature-label celwidget"
+                                                                offer-display-feature-name="desktop-secure-transaction"
+                                                                data-csa-c-type="widget"
+                                                                data-csa-c-slot-id="odf-feature-label-desktop-secure-transaction"
+                                                                data-csa-c-content-id="desktop-secure-transaction"
+                                                                data-cel-widget="desktop-secure-transaction"
+                                                                data-csa-c-id="yo62n8-e6tzyl-cv1xz2-zcc94r">
+                                                                <div class="a-spacing-none">
+                                                                    <span
+                                                                        class="a-size-small a-color-tertiary">Pago</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="offer-display-feature-text"
+                                                                offer-display-feature-name="desktop-secure-transaction"
+                                                                data-csa-c-type="widget"
+                                                                data-csa-c-slot-id="odf-feature-text-desktop-secure-transaction"
+                                                                data-csa-c-content-id="desktop-secure-transaction"
+                                                                data-csa-c-id="d8fjn1-ob74r6-q4b9e5-jjb63l">
+                                                                <span class="a-declarative" data-action="a-popover"
+                                                                    data-csa-c-type="widget"
+                                                                    data-csa-c-func-deps="aui-da-a-popover"
+                                                                    data-a-popover="{&quot;max-width&quot;:&quot;500&quot;,&quot;name&quot;:&quot;offerDisplayFeatureSecureTransactionPopover&quot;,&quot;activate&quot;:&quot;onmouseover&quot;,&quot;position&quot;:&quot;triggerBottom&quot;}"
+                                                                    data-csa-c-id="1lsbi3-uoxhnp-eqvav2-uoql5j"> <a
+                                                                        data-csa-c-content-id="odf-desktop-secure-transaction"
+                                                                        data-csa-c-slot-id="odf-desktop-secure-transaction-anchor-text"
+                                                                        data-csa-c-type="widget"
+                                                                        class="a-link-normal a-popover-trigger a-declarative"
+                                                                        href="javascript:void(0)" role="button"
+                                                                        data-csa-c-id="yd96iq-t3dmnw-3x34u4-vigm5q">
+                                                                        <span
+                                                                            class="a-size-small offer-display-feature-text-message">Transacción
+                                                                            segura</span> </a> </span>
+                                                                <div class="a-popover-preload"
+                                                                    id="a-popover-offerDisplayFeatureSecureTransactionPopover">
+                                                                    <div data-csa-c-content-id="desktop-secure-transaction"
+                                                                        data-csa-c-slot-id="odf-desktop-secure-transaction-popover-description"
+                                                                        data-csa-c-type="widget"
+                                                                        class="a-section a-padding-base"
+                                                                        data-csa-c-id="a8c0uh-efy6kk-2v8fyi-7o5fw5">
+                                                                        <div class="a-row a-spacing-base"> <span
+                                                                                class="a-text-bold">Tu transacción es
+                                                                                segura</span> </div>
+                                                                        <div class="a-row a-spacing-micro"> En Amazon,
+                                                                            nos esforzamos por proteger tu seguridad y
+                                                                            privacidad. Nuestro sistema de seguridad de
+                                                                            pagos encripta tu información durante la
+                                                                            transmisión de datos. No compartimos los
+                                                                            datos de tu tarjeta de crédito con
+                                                                            vendedores externos, ni vendemos tu
+                                                                            información a terceros. <a
+                                                                                data-csa-c-content-id="desktop-secure-transaction"
+                                                                                data-csa-c-slot-id="odf-desktop-secure-transaction-hyperlink"
+                                                                                data-csa-c-type="widget"
+                                                                                class="a-link-normal a-nowrap"
+                                                                                target="_blank" rel="noopener"
+                                                                                href="/-/es/gp/help/customer/display.html?nodeId=201909010"
+                                                                                data-csa-c-id="i8zuxt-pe4irp-51gkr6-c5yrwm">
+                                                                                <span class="a-size-small">Más
+                                                                                    información</span> </a> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="aok-hidden offer-display-feature-side-sheet">
+                                                                <div class="a-fixed-left-grid a-spacing-small">
+                                                                    <div class="a-fixed-left-grid-inner"
+                                                                        style="padding-left:130px">
+                                                                        <div data-csa-c-content-id="desktop-secure-transaction"
+                                                                            data-csa-c-slot-id="odf-side-sheet-feature-label-desktop-secure-transaction"
+                                                                            data-csa-c-type="widget"
+                                                                            class="a-fixed-left-grid-col offer-display-feature-side-sheet-label-column a-col-left"
+                                                                            style="width:130px;margin-left:-130px;float:left;"
+                                                                            data-csa-c-id="r7kwjd-2f1mdg-35pubp-ltodqy">
+                                                                            <span class="a-size-small a-color-tertiary">
+                                                                                Pago </span> </div>
+                                                                        <div data-csa-c-content-id="desktop-secure-transaction"
+                                                                            data-csa-c-slot-id="odf-side-sheet-feature-text-desktop-secure-transaction"
+                                                                            data-csa-c-type="widget"
+                                                                            data-side-sheet-attribute-name="desktop-secure-transaction"
+                                                                            class="a-fixed-left-grid-col offer-display-feature-side-sheet-content-column a-col-right"
+                                                                            style="padding-left:0%;float:left;"
+                                                                            data-csa-c-id="t2w0px-27hpvp-xtm66p-uy5tr2">
+                                                                            <div class="a-row">
+                                                                                <div data-csa-c-content-id="desktop-secure-transaction"
+                                                                                    data-csa-c-slot-id="odf-desktop-secure-transaction-side-sheet-anchor-text"
+                                                                                    data-csa-c-type="widget"
+                                                                                    class="a-row a-spacing-micro"
+                                                                                    data-csa-c-id="qoo103-8xiw1-fnfe7n-llzk0k">
+                                                                                    <span
+                                                                                        class="a-size-small">Transacción
+                                                                                        segura</span> </div>
+                                                                                <div data-csa-c-content-id="desktop-secure-transaction"
+                                                                                    data-csa-c-slot-id="odf-desktop-secure-transaction-side-sheet-description"
+                                                                                    data-csa-c-type="widget"
+                                                                                    class="a-row a-spacing-micro"
+                                                                                    data-csa-c-id="8n3ciy-e8nbnm-isafhb-7ddy3a">
+                                                                                    <span class="a-size-small">En
+                                                                                        Amazon, nos esforzamos por
+                                                                                        proteger tu seguridad y
+                                                                                        privacidad. Nuestro sistema de
+                                                                                        seguridad de pagos encripta tu
+                                                                                        información durante la
+                                                                                        transmisión de datos. No
+                                                                                        compartimos los datos de tu
+                                                                                        tarjeta de crédito con
+                                                                                        vendedores externos, ni vendemos
+                                                                                        tu información a
+                                                                                        terceros.</span> <a
+                                                                                        data-csa-c-content-id="desktop-secure-transaction"
+                                                                                        data-csa-c-slot-id="odf-desktop-secure-transaction-hyperlink"
+                                                                                        data-csa-c-type="widget"
+                                                                                        class="a-link-normal a-nowrap"
+                                                                                        target="_blank" rel="noopener"
+                                                                                        href="/-/es/gp/help/customer/display.html?nodeId=201909010"
+                                                                                        data-csa-c-id="py4a2e-19c2ns-vq1fti-rzfdq9">
+                                                                                        <span class="a-size-small">Más
+                                                                                            información</span> </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <hr aria-hidden="true"
+                                                                    class="a-spacing-small a-divider-normal">
+                                                            </div>
+                                                        </div>
+                                                        <div id="supportInformationFeature_feature_div"
+                                                            class="celwidget"
+                                                            data-feature-name="supportInformationFeature"
+                                                            data-csa-c-type="widget"
+                                                            data-csa-c-content-id="supportInformationFeature"
+                                                            data-csa-c-slot-id="supportInformationFeature_feature_div"
+                                                            data-csa-c-asin="B0C5F1QYJ9"
+                                                            data-csa-c-is-in-initial-active-row="false"
+                                                            data-csa-c-id="3ssv9k-ns2bow-e6e2ax-39i5ei"
+                                                            data-cel-widget="supportInformationFeature_feature_div">
+                                                        </div>
+                                                        <div id="customerServiceInfoFeature_feature_div"
+                                                            class="celwidget"
+                                                            data-feature-name="customerServiceInfoFeature"
+                                                            data-csa-c-type="widget"
+                                                            data-csa-c-content-id="customerServiceInfoFeature"
+                                                            data-csa-c-slot-id="customerServiceInfoFeature_feature_div"
+                                                            data-csa-c-asin="B0C5F1QYJ9"
+                                                            data-csa-c-is-in-initial-active-row="false"
+                                                            data-csa-c-id="7mb51j-9klgth-og586-9bxvd1"
+                                                            data-cel-widget="customerServiceInfoFeature_feature_div">
+                                                        </div>
+                                                        <div id="sourceMerchantInfoFeature_feature_div"
+                                                            class="celwidget"
+                                                            data-feature-name="sourceMerchantInfoFeature"
+                                                            data-csa-c-type="widget"
+                                                            data-csa-c-content-id="sourceMerchantInfoFeature"
+                                                            data-csa-c-slot-id="sourceMerchantInfoFeature_feature_div"
+                                                            data-csa-c-asin="B0C5F1QYJ9"
+                                                            data-csa-c-is-in-initial-active-row="false"
+                                                            data-csa-c-id="acxn90-8z4cp7-b6ymvu-cc2bp2"
+                                                            data-cel-widget="sourceMerchantInfoFeature_feature_div">
+                                                        </div>
+                                                        <div id="packageInfoFeature_feature_div" class="celwidget"
+                                                            data-feature-name="packageInfoFeature"
+                                                            data-csa-c-type="widget"
+                                                            data-csa-c-content-id="packageInfoFeature"
+                                                            data-csa-c-slot-id="packageInfoFeature_feature_div"
+                                                            data-csa-c-asin="B0C5F1QYJ9"
+                                                            data-csa-c-is-in-initial-active-row="false"
+                                                            data-csa-c-id="nu0vc3-4q3hvu-wsj109-2unwo5"
+                                                            data-cel-widget="packageInfoFeature_feature_div">
+                                                        </div>
+                                                        <div id="giftWrapInfoFeature_feature_div" class="celwidget"
+                                                            data-feature-name="giftWrapInfoFeature"
+                                                            data-csa-c-type="widget"
+                                                            data-csa-c-content-id="giftWrapInfoFeature"
+                                                            data-csa-c-slot-id="giftWrapInfoFeature_feature_div"
+                                                            data-csa-c-asin="B0C5F1QYJ9"
+                                                            data-csa-c-is-in-initial-active-row="false"
+                                                            data-csa-c-id="k5o31n-ssejsl-csmarg-8vdm7g"
+                                                            data-cel-widget="giftWrapInfoFeature_feature_div">
+                                                        </div>
+                                                        <div id="conditionInfoFeature_feature_div" class="celwidget"
+                                                            data-feature-name="conditionInfoFeature"
+                                                            data-csa-c-type="widget"
+                                                            data-csa-c-content-id="conditionInfoFeature"
+                                                            data-csa-c-slot-id="conditionInfoFeature_feature_div"
+                                                            data-csa-c-asin="B0C5F1QYJ9"
+                                                            data-csa-c-is-in-initial-active-row="false"
+                                                            data-csa-c-id="ieqs4p-jen0ep-ski0ua-iv1bun"
+                                                            data-cel-widget="conditionInfoFeature_feature_div">
+                                                        </div>
+                                                        <div id="secureTransactionReorderT2_feature_div"
+                                                            class="celwidget"
+                                                            data-feature-name="secureTransactionReorderT2"
+                                                            data-csa-c-type="widget"
+                                                            data-csa-c-content-id="secureTransactionReorderT2"
+                                                            data-csa-c-slot-id="secureTransactionReorderT2_feature_div"
+                                                            data-csa-c-asin="B0C5F1QYJ9"
+                                                            data-csa-c-is-in-initial-active-row="false"
+                                                            data-csa-c-id="tpnvc5-ysp38q-afqufs-b9oue8"
+                                                            data-cel-widget="secureTransactionReorderT2_feature_div">
+                                                        </div>
+                                                    </div>
+                                                    <div id="offer-display-features-show-more"
+                                                        data-csa-c-content-id="show-feature-details"
+                                                        data-csa-c-slot-id="odf-desktop-details-link"
+                                                        data-csa-c-type="widget"
+                                                        class="a-section aok-hidden offer-display-features-show-more"
+                                                        data-csa-c-id="puwudw-m3dhjn-6lrdvb-afzjlw">
+                                                        <hr aria-hidden="true"
+                                                            class="a-spacing-mini a-spacing-top-mini a-divider-normal">
+                                                        <span class="a-declarative"
+                                                            data-action="show-offer-display-features-side-sheet"
+                                                            data-csa-c-type="widget"
+                                                            data-csa-c-func-deps="aui-da-show-offer-display-features-side-sheet"
+                                                            data-show-offer-display-features-side-sheet="{}"
+                                                            data-csa-c-id="d8c5om-1q12av-idir6y-aa4qil"> <a
+                                                                class="a-size-small a-link-normal" href="#">Más
+                                                                información</a> </span>
+                                                    </div>
+                                                </div>
+                                                <div class="a-row">
+                                                    <div
+                                                        class="a-expander-header a-expander-partial-collapse-header a-size-small aok-hidden">
+                                                        <div class="a-expander-content-fade"></div><a
+                                                            href="javascript:void(0)"
+                                                            data-csa-c-content-id="progressive-reveal"
+                                                            data-csa-c-func-deps="aui-da-a-expander-toggle"
+                                                            data-csa-c-slot-id="odf-desktop-expander"
+                                                            data-csa-c-type="widget" data-csa-interaction-events="click"
+                                                            aria-expanded="false" role="button"
+                                                            data-action="a-expander-toggle" class="a-declarative"
+                                                            data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Ver más&quot;, &quot;collapse_prompt&quot;:&quot;Ver menos&quot;}"
+                                                            data-csa-c-id="yfh0w9-50389i-uwrqbm-jn3vqx"><i
+                                                                class="a-icon a-icon-extender-expand"></i><span
+                                                                class="a-expander-prompt">Ver más</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="offer-display-features-side-sheet-content"
+                                            class="a-section a-padding-large"> </div> <span class="a-declarative"
+                                            data-action="close-offer-display-features-side-sheet"
+                                            data-csa-c-type="widget"
+                                            data-csa-c-func-deps="aui-da-close-offer-display-features-side-sheet"
+                                            data-close-offer-display-features-side-sheet="{}"
+                                            data-csa-c-id="nbbzt0-4igv7g-dz8t8z-t5ikiz">
+                                            <div id="offer-display-features-background"
+                                                class="a-section aok-hidden offer-display-features-darken-background">
+                                                <span tabindex="0">
+                                                    <i id="offer-display-features-close-icon"
+                                                        class="a-icon a-icon-close a-icon-medium offer-display-features-close-button"
+                                                        role="img" aria-label="offer-display-features-close"></i>
+                                                </span>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div id="shipsFromSoldByODF_feature_div" class="celwidget"
+                                        data-feature-name="shipsFromSoldByODF" data-csa-c-type="widget"
+                                        data-csa-c-content-id="shipsFromSoldByODF"
+                                        data-csa-c-slot-id="shipsFromSoldByODF_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="yp2eht-2cm892-hsenvu-ai3b50"
+                                        data-cel-widget="shipsFromSoldByODF_feature_div">
+                                    </div>
+                                    <div id="sellerCertificationsODF_feature_div" class="celwidget"
+                                        data-feature-name="sellerCertificationsODF" data-csa-c-type="widget"
+                                        data-csa-c-content-id="sellerCertificationsODF"
+                                        data-csa-c-slot-id="sellerCertificationsODF_feature_div"
+                                        data-csa-c-asin="B0C5F1QYJ9" data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="9ps3nz-ddqkk4-hwur3b-7u6g4m"
+                                        data-cel-widget="sellerCertificationsODF_feature_div">
+                                    </div>
+                                    <div id="valuePropT2_feature_div" class="celwidget" data-feature-name="valuePropT2"
+                                        data-csa-c-type="widget" data-csa-c-content-id="valuePropT2"
+                                        data-csa-c-slot-id="valuePropT2_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="j2azhr-vh2637-cz7ubc-rhvu6g"
+                                        data-cel-widget="valuePropT2_feature_div">
+                                    </div>
+                                    <div id="returnPolicyODF_feature_div" class="celwidget"
+                                        data-feature-name="returnPolicyODF" data-csa-c-type="widget"
+                                        data-csa-c-content-id="returnPolicyODF"
+                                        data-csa-c-slot-id="returnPolicyODF_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="btbmby-hkb382-dqv8eg-5in4fw"
+                                        data-cel-widget="returnPolicyODF_feature_div">
+                                    </div>
+                                    <div id="supportInformationODF_feature_div" class="celwidget"
+                                        data-feature-name="supportInformationODF" data-csa-c-type="widget"
+                                        data-csa-c-content-id="supportInformationODF"
+                                        data-csa-c-slot-id="supportInformationODF_feature_div"
+                                        data-csa-c-asin="B0C5F1QYJ9" data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="oyiznu-255w2l-7zwg3p-s948hw"
+                                        data-cel-widget="supportInformationODF_feature_div">
+                                    </div>
+                                    <div id="packagingODF_feature_div" class="celwidget"
+                                        data-feature-name="packagingODF" data-csa-c-type="widget"
+                                        data-csa-c-content-id="packagingODF"
+                                        data-csa-c-slot-id="packagingODF_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="p7veex-zbn9ts-5wed28-3e2791"
+                                        data-cel-widget="packagingODF_feature_div">
+                                    </div>
+                                    <div id="hbaLabel_feature_div" class="celwidget" data-feature-name="hbaLabel"
+                                        data-csa-c-type="widget" data-csa-c-content-id="hbaLabel"
+                                        data-csa-c-slot-id="hbaLabel_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="t413aa-b0f0ca-dgzz7m-ldfr91"
+                                        data-cel-widget="hbaLabel_feature_div">
+                                    </div>
+                                    <div id="quantityLayoutHigh_feature_div" class="celwidget"
+                                        data-feature-name="quantityLayoutHigh" data-csa-c-type="widget"
+                                        data-csa-c-content-id="quantityLayoutHigh"
+                                        data-csa-c-slot-id="quantityLayoutHigh_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="7bsedr-w3wb79-hkik6m-r54n8n"
+                                        data-cel-widget="quantityLayoutHigh_feature_div">
+                                    </div>
+                                    <div id="voltageCompliance_feature_div" class="celwidget"
+                                        data-feature-name="voltageCompliance" data-csa-c-type="widget"
+                                        data-csa-c-content-id="voltageCompliance"
+                                        data-csa-c-slot-id="voltageCompliance_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="rczbsn-uf0f1f-vkz8qr-t8kxk9"
+                                        data-cel-widget="voltageCompliance_feature_div">
+                                    </div>
+                                    <div id="businessPricing_feature_div" class="celwidget"
+                                        data-feature-name="businessPricing" data-csa-c-type="widget"
+                                        data-csa-c-content-id="businessPricing"
+                                        data-csa-c-slot-id="businessPricing_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="1o1qrm-8so9nn-cgv7v9-svo762"
+                                        data-cel-widget="businessPricing_feature_div">
+                                    </div>
+                                    <div id="soldByThirdParty_feature_div" class="celwidget"
+                                        data-feature-name="soldByThirdParty" data-csa-c-type="widget"
+                                        data-csa-c-content-id="soldByThirdParty"
+                                        data-csa-c-slot-id="soldByThirdParty_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="4ku72u-pnve0l-ggi57z-maph0u"
+                                        data-cel-widget="soldByThirdParty_feature_div">
+                                    </div>
+                                    <div id="scheduledDelivery_feature_div" class="celwidget"
+                                        data-feature-name="scheduledDelivery" data-csa-c-type="widget"
+                                        data-csa-c-content-id="scheduledDelivery"
+                                        data-csa-c-slot-id="scheduledDelivery_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="mw6tf8-ixbotv-mi7vrj-s2tw0"
+                                        data-cel-widget="scheduledDelivery_feature_div">
+                                    </div>
+                                    <div id="mbb_feature_div" class="celwidget" data-feature-name="mbb"
+                                        data-csa-c-type="widget" data-csa-c-content-id="mbb"
+                                        data-csa-c-slot-id="mbb_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="4af5bt-awvtc9-ge38ux-wn5bkj" data-cel-widget="mbb_feature_div">
+                                    </div>
+                                    <div id="desktop_productInsurance_feature_div" class="celwidget"
+                                        data-feature-name="desktop_productInsurance" data-csa-c-type="widget"
+                                        data-csa-c-content-id="desktop_productInsurance"
+                                        data-csa-c-slot-id="desktop_productInsurance_feature_div"
+                                        data-csa-c-asin="B0C5F1QYJ9" data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="so2iej-5jcbgj-kdtksm-1iv2yn"
+                                        data-cel-widget="desktop_productInsurance_feature_div">
+                                    </div>
+                                    <div id="quantityLayoutLow_feature_div" class="celwidget"
+                                        data-feature-name="quantityLayoutLow" data-csa-c-type="widget"
+                                        data-csa-c-content-id="quantityLayoutLow"
+                                        data-csa-c-slot-id="quantityLayoutLow_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="xeqwly-5gvkdb-4r8mix-l4hpic"
+                                        data-cel-widget="quantityLayoutLow_feature_div">
+                                    </div>
+                                    <div id="asg_feature_div" class="celwidget" data-feature-name="asg"
+                                        data-csa-c-type="widget" data-csa-c-content-id="asg"
+                                        data-csa-c-slot-id="asg_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="c4hpg2-1dwvnd-p7yfoq-5pgv4l" data-cel-widget="asg_feature_div">
+                                    </div>
+                                    <div id="twisterPlusPriceSubtotalWWDesktop_feature_div" class="celwidget"
+                                        data-feature-name="twisterPlusPriceSubtotalWWDesktop" data-csa-c-type="widget"
+                                        data-csa-c-content-id="twisterPlusPriceSubtotalWWDesktop"
+                                        data-csa-c-slot-id="twisterPlusPriceSubtotalWWDesktop_feature_div"
+                                        data-csa-c-asin="B0C5F1QYJ9" data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="kz63v1-lcvnbt-nqr5if-55wumx"
+                                        data-cel-widget="twisterPlusPriceSubtotalWWDesktop_feature_div">
+                                    </div>
+                                    <div id="addToCart_feature_div" class="celwidget" data-feature-name="addToCart"
+                                        data-csa-c-type="widget" data-csa-c-content-id="addToCart"
+                                        data-csa-c-slot-id="addToCart_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="kzwjkq-7eo4g6-o747w3-p74my6"
+                                        data-cel-widget="addToCart_feature_div">
+                                    </div>
+                                    <div id="preAddToCartFramework_feature_div" class="celwidget"
+                                        data-feature-name="preAddToCartFramework" data-csa-c-type="widget"
+                                        data-csa-c-content-id="preAddToCartFramework"
+                                        data-csa-c-slot-id="preAddToCartFramework_feature_div"
+                                        data-csa-c-asin="B0C5F1QYJ9" data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="1sr9cn-2aykkp-1ornkg-2ixtzi"
+                                        data-cel-widget="preAddToCartFramework_feature_div">
+                                        <script type="a-state"
+                                            data-a-state="{&quot;key&quot;:&quot;dp-pre-atc-hero&quot;}">{"heroName":""}</script>
+                                        <script type="a-state"
+                                            data-a-state="{&quot;key&quot;:&quot;dp-pre-atc-hero-candidates&quot;}">{}</script>
+                                    </div>
+                                    <div id="buyNow_feature_div" class="celwidget" data-feature-name="buyNow"
+                                        data-csa-c-type="widget" data-csa-c-content-id="buyNow"
+                                        data-csa-c-slot-id="buyNow_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="jglv2s-qog7tt-x4v49o-n3q26f"
+                                        data-cel-widget="buyNow_feature_div">
+                                    </div>
+                                    <div id="twisterPlusBuyBoxMessage_feature_div" class="celwidget"
+                                        data-feature-name="twisterPlusBuyBoxMessage" data-csa-c-type="widget"
+                                        data-csa-c-content-id="twisterPlusBuyBoxMessage"
+                                        data-csa-c-slot-id="twisterPlusBuyBoxMessage_feature_div"
+                                        data-csa-c-asin="B0C5F1QYJ9" data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="shjipy-6gsrsq-pzu7c8-nt824j"
+                                        data-cel-widget="twisterPlusBuyBoxMessage_feature_div">
+                                    </div>
+                                    <div id="secureTransactionODF_feature_div" class="celwidget"
+                                        data-feature-name="secureTransactionODF" data-csa-c-type="widget"
+                                        data-csa-c-content-id="secureTransactionODF"
+                                        data-csa-c-slot-id="secureTransactionODF_feature_div"
+                                        data-csa-c-asin="B0C5F1QYJ9" data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="y85yp1-y4op5g-bl4y1f-1u2x7u"
+                                        data-cel-widget="secureTransactionODF_feature_div">
+                                    </div>
+                                    <div id="oneClick_feature_div" class="celwidget" data-feature-name="oneClick"
+                                        data-csa-c-type="widget" data-csa-c-content-id="oneClick"
+                                        data-csa-c-slot-id="oneClick_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="e0jjk6-k8m709-xsz9bs-4tpsn6"
+                                        data-cel-widget="oneClick_feature_div">
+                                        <div id="OneClickBox" class="a-button-stack"> </div>
+                                    </div>
+                                    <div id="detailPageGifting_feature_div" class="celwidget"
+                                        data-feature-name="detailPageGifting" data-csa-c-type="widget"
+                                        data-csa-c-content-id="detailPageGifting"
+                                        data-csa-c-slot-id="detailPageGifting_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="ou66qn-vv8cj8-omi3o8-cnngum"
+                                        data-cel-widget="detailPageGifting_feature_div">
+                                        <div data-a-input-name="gift-wrap" class="a-checkbox a-spacing-base"><label
+                                                for="gift-wrap"><input id="gift-wrap" type="checkbox" name="gift-wrap"
+                                                    value="yes" control-id="ControlID-8"><i
+                                                    class="a-icon a-icon-checkbox"></i><span
+                                                    class="a-label a-checkbox-label">Agregar un recibo de regalo para
+                                                    facilitar las devoluciones</span></label></div>
+                                    </div>
+                                    <div id="makoPreRegistration" class="celwidget"
+                                        data-feature-name="makoPreRegistration" data-csa-c-type="widget"
+                                        data-csa-c-content-id="makoPreRegistration"
+                                        data-csa-c-slot-id="makoPreRegistration" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="j4hjs5-xc4wym-3xk9yf-uqd8hd"
+                                        data-cel-widget="makoPreRegistration">
+                                    </div>
+                                    <div id="accessoryUpsellAmabot_feature_div" class="celwidget"
+                                        data-feature-name="accessoryUpsellAmabot" data-csa-c-type="widget"
+                                        data-csa-c-content-id="accessoryUpsellAmabot"
+                                        data-csa-c-slot-id="accessoryUpsellAmabot_feature_div"
+                                        data-csa-c-asin="B0C5F1QYJ9" data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="8pfpq8-hp05uk-xt4sky-j2f8cn"
+                                        data-cel-widget="accessoryUpsellAmabot_feature_div">
+                                    </div>
+                                    <div id="accessoryUpsellBtf_feature_div" class="celwidget"
+                                        data-feature-name="accessoryUpsellBtf" data-csa-c-type="widget"
+                                        data-csa-c-content-id="accessoryUpsellBtf"
+                                        data-csa-c-slot-id="accessoryUpsellBtf_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="qh4vul-nsoqzf-xwhhjy-6gidf7"
+                                        data-cel-widget="accessoryUpsellBtf_feature_div">
+                                    </div>
+                                    <div id="unifiedLocation_feature_div" class="celwidget"
+                                        data-feature-name="unifiedLocation" data-csa-c-type="widget"
+                                        data-csa-c-content-id="unifiedLocation"
+                                        data-csa-c-slot-id="unifiedLocation_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                        data-csa-c-is-in-initial-active-row="false"
+                                        data-csa-c-id="wpg24u-jbo6gh-614nrh-hjt82r"
+                                        data-cel-widget="unifiedLocation_feature_div">
+                                    </div>
+                                </div>
                             </div>
-    
-                            <!-- Quantity and Add to Cart -->
-                            <div class="quantity-section">
-                                <label for="quantity">Cantidad:</label>
-                                <select id="quantity" name="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <!-- Add more options as needed -->
-                                </select>
-    
-                                <button id="addToCart" class="btn btn-primary">Añadir al Carrito</button>
+                            <div id="digitalDashHighProminence_feature_div" class="celwidget"
+                                data-feature-name="digitalDashHighProminence" data-csa-c-type="widget"
+                                data-csa-c-content-id="digitalDashHighProminence"
+                                data-csa-c-slot-id="digitalDashHighProminence_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                data-csa-c-is-in-initial-active-row="false" data-csa-c-id="wouawt-sedk50-eh7m9a-9eu86h"
+                                data-cel-widget="digitalDashHighProminence_feature_div">
+                            </div>
+                            <div id="marsAccessoryUpsell_feature_div" class="celwidget"
+                                data-feature-name="marsAccessoryUpsellSuppressAccessory" data-csa-c-type="widget"
+                                data-csa-c-content-id="marsAccessoryUpsellSuppressAccessory"
+                                data-csa-c-slot-id="marsAccessoryUpsell_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                data-csa-c-is-in-initial-active-row="false" data-csa-c-id="kkn6wx-ebs9m8-jth5kx-ukeng7"
+                                data-cel-widget="marsAccessoryUpsell_feature_div">
+                            </div>
+                            <div id="addToWishlist_feature_div" class="celwidget" data-feature-name="addToWishlist"
+                                data-csa-c-type="widget" data-csa-c-content-id="addToWishlist"
+                                data-csa-c-slot-id="addToWishlist_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                data-csa-c-is-in-initial-active-row="false" data-csa-c-id="1n6p48-tqchz5-cvmrum-krc6ce"
+                                data-cel-widget="addToWishlist_feature_div">
+                                <hr aria-hidden="true" class="a-spacing-base a-divider-normal">
+                                <script>
+                                    function atwlEarlyClick(e) {
+                                        e.preventDefault();
+                                        if (window.atwlLoaded) {
+                                            return; //if JS is loaded then we can ignore the early click case
+                                        }
+                                        var ADD_TO_LIST_FROM_DETAIL_PAGE_VENDOR_ID = "website.wishlist.detail.add.earlyclick";
+
+                                        var paramMap = {
+                                            "asin": "B0C5F1QYJ9",
+                                            "vendorId": ADD_TO_LIST_FROM_DETAIL_PAGE_VENDOR_ID,
+                                            "isAjax": "false"
+                                        }
+
+                                        var url = "/hz/wishlist/additemtolist?ie=UTF8";
+
+                                        for (var param in paramMap) {
+                                            url += "&" + param + "=" + paramMap[param];
+                                        }
+                                        var xhr = new XMLHttpRequest();
+                                        xhr.open("POST", url, false);
+                                        xhr.setRequestHeader("anti-csrftoken-a2z", "gwqPk6n2+fbCRRgFLOf9tUIQUi6uLH5vgiRxPjJVhbTdAAAAAQAAAABlaqpxcmF3AAAAAHuL9oHQYR32uqP6iUf9gA==");
+                                        xhr.onload = function () {
+                                            window.location = xhr.responseURL; //Needed to force a redirect; not supported on IE!
+                                        }
+                                        xhr.send();
+                                    }
+                                </script>
+                                <div id="wishlistButtonStack" class="a-button-stack">
+                                    <script>
+                                        'use strict';
+
+                                        P.when('A').execute(function (A) {
+                                            A.declarative('atwlDropdownClickDeclarative', 'click', function (e) {
+                                                window.wlArrowEv = e;
+                                                e.$event.preventDefault();
+                                                (function () {
+
+                                                    if (window.P && window.atwlLoaded) {
+                                                        window.P.when('A').execute(function (A) { A.trigger('wl-drop-down', window.wlArrowEv); })
+                                                        return;
+                                                    }
+
+                                                    window.atwlEc = true;
+
+                                                    var b = document.getElementById('add-to-wishlist-button-group');
+
+                                                    var s = document.getElementById('atwl-dd-spinner-holder');
+
+                                                    if (!(s && b)) {
+                                                        return;
+                                                    }
+                                                    s.classList.remove('a-hidden');
+                                                    s.style.position = 'absolute';
+                                                    s.style.width = b.clientWidth + 'px';
+                                                    s.style.zIndex = 1;
+                                                    return;
+                                                })();
+                                                return false;
+                                            });
+                                        });
+                                    </script>
+                                    <div id="add-to-wishlist-button-group" data-csa-c-func-deps="aui-da-a-button-group"
+                                        data-csa-c-type="widget" data-csa-interaction-events="click" data-hover="<!-- If PartialItemStateWeblab is true then, showing different Add-to-wish-list tool-tip message which is consistent with Add-to-Cart tool tip message.  -->
+Para Agregar a Tu Lista, elige entre las opciones a la izquierda" class="a-button-group a-declarative a-spacing-none"
+                                        data-action="a-button-group" role="radiogroup"
+                                        data-csa-c-id="18qdz5-16esdr-omowni-88jrst"> <span id="wishListMainButton"
+                                            class="a-button a-button-groupfirst a-spacing-none a-button-base a-declarative"
+                                            role="radio" aria-posinset="1" aria-setsize="1"
+                                            data-action="add-wishlist-declarative"><span class="a-button-inner"><a
+                                                    href="https://www.amazon.com/-/es/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Faw%2Fd%2FB0C5F1QYJ9&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;"
+                                                    name="submit.add-to-registry.wishlist.unrecognized"
+                                                    title="Agregar a la Lista" data-hover="<!-- If PartialItemStateWeblab is true then, showing different Add-to-wish-list tool-tip message which is consistent with Add-to-Cart tool tip message.  -->
+Para Agregar a Tu Lista, elige entre las opciones a la izquierda" class="a-button-text a-text-left"> Agregar a la Lista
+                                                </a></span></span> </div>
+                                    <div id="atwl-inline-spinner" class="a-section a-hidden">
+                                        <div class="a-spinner-wrapper"><span class="a-spinner a-spinner-medium"></span>
+                                        </div>
+                                    </div>
+                                    <div id="atwl-inline" class="a-section a-spacing-none a-hidden">
+                                        <div class="a-row a-text-ellipsis">
+                                            <div id="atwl-inline-sucess-msg"
+                                                class="a-box a-alert-inline a-alert-inline-success" aria-live="polite"
+                                                aria-atomic="true">
+                                                <div class="a-box-inner a-alert-container"><i
+                                                        class="a-icon a-icon-alert"></i>
+                                                    <div class="a-alert-content"> <span class="a-size-base"
+                                                            role="alert"> Agregado a </span> </div>
+                                                </div>
+                                            </div> <a id="atwl-inline-link" class="a-link-normal"
+                                                href="/-/es/gp/registry/wishlist/"> <span id="atwl-inline-link-text"
+                                                    class="a-size-base" role="alert"> </span> </a>
+                                        </div>
+                                    </div>
+                                    <div id="atwl-inline-error" class="a-section a-hidden">
+                                        <div class="a-box a-alert-inline a-alert-inline-error" role="alert">
+                                            <div class="a-box-inner a-alert-container"><i
+                                                    class="a-icon a-icon-alert"></i>
+                                                <div class="a-alert-content"> <span id="atwl-inline-error-msg"
+                                                        class="a-size-base" role="alert"> No se puede agregar el
+                                                        artículo a la Lista. Por favor inténtalo de nuevo. </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="atwl-dd-spinner-holder" class="a-section a-hidden">
+                                        <div class="a-row a-dropdown">
+                                            <div class="a-section a-popover-wrapper">
+                                                <div class="a-section a-text-center a-popover-inner">
+                                                    <div class="a-box a-popover-loading">
+                                                        <div class="a-box-inner"> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="atwl-dd-error-holder" class="a-section a-hidden">
+                                        <div class="a-section a-dropdown">
+                                            <div class="a-section a-popover-wrapper">
+                                                <div
+                                                    class="a-section a-spacing-base a-padding-base a-text-left a-popover-inner">
+                                                    <h3 class="a-color-error"> Lo sentimos; hubo un problema. </h3>
+                                                    <span> Hubo un error al recuperar tus Listas de Deseos. Por favor
+                                                        inténtalo de nuevo. </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="atwl-dd-unavail-holder" class="a-section a-hidden">
+                                        <div class="a-section a-dropdown">
+                                            <div class="a-section a-popover-wrapper">
+                                                <div
+                                                    class="a-section a-spacing-base a-padding-base a-text-left a-popover-inner">
+                                                    <h3 class="a-color-error"> Lo sentimos; hubo un problema. </h3>
+                                                    <span> Lista no disponible. </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="a-state"
+                                        data-a-state="{&quot;key&quot;:&quot;atwl&quot;}">{"showInlineLink":false,"hzPopover":true,"wishlistButtonId":"add-to-wishlist-button","dropDownHtml":"","inlineJsFix":true,"wishlistButtonSubmitId":"add-to-wishlist-button-submit","maxAjaxFailureCount":"3","asin":"B0C5F1QYJ9"}</script>
+                                </div>
+                                <script type="a-state"
+                                    data-a-state="{&quot;key&quot;:&quot;popoverState&quot;}">{"formId":"addToCart","showWishListDropDown":false,"wishlistPopoverWidth":206,"isAddToWishListDropDownAuiEnabled":true,"showPopover":false}</script>
+                                <script type="text/javascript">(function (f) { var _np = (window.P._namespace("GiftingDetailPageTemplates")); if (_np.guardFatal) { _np.guardFatal(f)(_np); } else { f(_np); } }(function (P) {
+                                        'use strict';
+
+
+                                        window.P.now('atwl-ready').execute(function (atwlModule) {
+                                            var isRegistered = (typeof atwlModule !== 'undefined');
+                                            if (!isRegistered) {
+                                                window.P.register('atwl-ready');
+                                            }
+                                        });
+                                    }));</script>
+                                <div class="aok-hidden"
+                                    data-amazon-lists-csrf-token="gwqPk6n2+fbCRRgFLOf9tUIQUi6uLH5vgiRxPjJVhbTdAAAAAQAAAABlaqpxcmF3AAAAAHuL9oHQYR32uqP6iUf9gA==">
+                                </div>
+                                <script type="text/javascript">(function (f) { var _np = (window.P._namespace("list-CF-register-js")); if (_np.guardFatal) { _np.guardFatal(f)(_np); } else { f(_np); } }(function (P) {
+                                        "use strict";
+
+                                        window.P.now('atwl-cf').execute(function (module) {
+                                            var isRegistered = (typeof module !== 'undefined');
+                                            if (!isRegistered) {
+                                                window.P.register('atwl-cf');
+                                            }
+                                        });
+                                    }));</script>
+                                <style type="text/css">
+                                    .registry-button-width {
+                                        width: 100%;
+                                        margin-left: ;
+                                        margin-right: ;
+                                    }
+
+                                    .add-to-baby-button-spacing-bottom {
+                                        margin-bottom: 0;
+                                    }
+                                </style>
+                            </div>
+                            <div id="addToRegistry_feature_div" class="celwidget" data-feature-name="addToRegistry"
+                                data-csa-c-type="widget" data-csa-c-content-id="addToRegistry"
+                                data-csa-c-slot-id="addToRegistry_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                data-csa-c-is-in-initial-active-row="false" data-csa-c-id="w598ha-vrk1p4-v1eko4-7kwglp"
+                                data-cel-widget="addToRegistry_feature_div">
+                            </div>
+                            <div id="digitalDashLowProminence_feature_div" class="celwidget"
+                                data-feature-name="digitalDashLowProminence" data-csa-c-type="widget"
+                                data-csa-c-content-id="digitalDashLowProminence"
+                                data-csa-c-slot-id="digitalDashLowProminence_feature_div" data-csa-c-asin="B0C5F1QYJ9"
+                                data-csa-c-is-in-initial-active-row="false" data-csa-c-id="5g6drn-h7fj4j-ilzh7h-nbg81b"
+                                data-cel-widget="digitalDashLowProminence_feature_div">
                             </div>
                         </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-4">
-                ghola
-            </div> 
-        </div>
-      
-      
+
+
     </main>
 
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="../js/detalle-producto.js"></script>
-  
+
 
 </body>
 

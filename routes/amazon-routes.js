@@ -4,7 +4,7 @@ var db = require("../models");
 var search = amazon.createClient({
   awsId: "AKIAYH4P6TPMZHXTIX3V",  // Reemplaza con tu Access Key ID
   awsSecret: "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",  // Reemplaza con tu Secret Access Key
-  awsTag: "a77015054-20", //ID De Seguimiento
+  awsTag: "a77015054-20", //ID De Seguimiento Aws Afiliados
 });
 var productos = [
   {
