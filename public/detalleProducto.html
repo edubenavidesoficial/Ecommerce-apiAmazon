@@ -27,6 +27,8 @@
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
     <link rel="stylesheet" href="../css/user.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
     
     <title>Pulenta</title>
 </head>
@@ -82,34 +84,53 @@
                 <a id="mycart" class="waves-effect" href="#!">Mis Compras</a>
             </li>
         </ul>
-            
+        <br> <br> <br>
         <div class="container">
-            <div class="section">
-                <div class="row">
-                    <div class="col l12">
-                        <h4 id="list-name"></h4>
-                        <p id="list-description"></p>
-                    </div>
-                </div>
-                <div class="row card text-white bg-success">
-                    <div style="text-align: center; padding-top:4%;">
+            <div class="row">
+                <!-- Left Column (col-6) -->
+                <div class="col-4">
+                   <!-- Content for the right column (col-6) -->
+                   <div class="row card text-white bg-success">
+                    <div style="text-align: center; padding-top: 4%;">
                         <img class="card-img-top" src="https://picsum.photos/500/500" alt="" id="imagen">
                     </div>
-                  <div class="card-body">
-                    <h4 class="card-title" id="nombre">Titulo</h4>
-                    <p class="card-text" id="precio">$precio</p>
-                  </div>
+                    
+                </div> <!-- Content for the left column (col-6) -->
                 </div>
+                
+                <!-- Right Column (col-6) -->
+                <div class="col-4">
+                    <h4 id="list-name"></h4>
+                        <p id="list-description"></p>
+                        <div class="card-body">
+                            <h4 class="card-title" id="nombre">Titulo</h4>
+                            <p class="card-text" id="precio">$precio</p>
     
-                </div>
-                <div class="row summary">
-                    <h6>Resumen</h6>
-                    <p style="text-aling:justify;" id="descripcion">Descripcion</p>
+                            <!-- Additional Details -->
+                            <div class="details">
+                                <p id="marca">Marca: XYZ</p>
+                                <p id="modelo">Modelo: ABC</p>
+                                <!-- Add more details as needed -->
+                            </div>
     
-                </div>
+                            <!-- Quantity and Add to Cart -->
+                            <div class="quantity-section">
+                                <label for="quantity">Cantidad:</label>
+                                <select id="quantity" name="quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <!-- Add more options as needed -->
+                                </select>
+    
+                                <button id="addToCart" class="btn btn-primary">Añadir al Carrito</button>
+                            </div>
+                        </div>
             </div>
+            <div class="col-4">
+                ghola
+            </div> 
         </div>
-    
       
       
     </main>
