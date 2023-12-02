@@ -35,7 +35,6 @@ function agregarProductos(data) {
 $(document).ready(function () {
   $.get("/api/productos/", 
   function(response) {
-    console.log(response);
     const productos = response
     agregarProductos(productos);
 
