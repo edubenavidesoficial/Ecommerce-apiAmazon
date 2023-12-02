@@ -43,9 +43,17 @@ $(document).ready(function () {
   detalleProducto(productoid);
 });
 function detalleProducto(id) {
-  letproducto = productos.find((element) => element.id == id);
-  $("#nombre").html(producto.name);
-  $("#precio").html("$" + producto.precio);
-  $("#imagen").attr("src", producto.imagen);
-  $("#descripcion").html(producto.descripcion);
+
+  $.get("/api/producto/"+id, 
+  function(response) {
+    console.log(response);
+    const producto_data = response
+    // direct to profile page
+    $("#nombre").html(producto_data.name);
+    $("#precio").html("$" + producto_data.precio);
+    $("#imagen").attr("src", producto_data.imagen);
+    $("#descripcion").html(producto_data.descripcion);
+  })
+
+ 
 }
